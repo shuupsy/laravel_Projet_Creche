@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Homenurse;
+use App\Models\Profilenfantparents;
 use App\Http\Requests\StoreHomenurseRequest;
 use App\Http\Requests\UpdateHomenurseRequest;
-use App\Models\Homenurse;
 
 class HomenurseController extends Controller
 {
@@ -15,7 +16,8 @@ class HomenurseController extends Controller
      */
     public function index()
     {
-        //
+        $kids = Profilenfantparents::all();
+        return view('frontend.pages.Homenurse', compact('kids'));
     }
 
     /**

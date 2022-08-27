@@ -8,6 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-
+<header>
+    {{-- @include('') --}}
+</header>
+<main>
+    @yield('content')
+</main>
 </body>
 </html>
