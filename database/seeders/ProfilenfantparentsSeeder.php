@@ -18,6 +18,7 @@ class ProfilenfantparentsSeeder extends Seeder
         DB::table("profilenfantparents")->insert([
             [
                 "personalId" => 1,
+                "section" => 2,
                 "name" => "Théo",
                 "imgFace" => "LIEN A MODIFIER",
                 "contrat" => "LIEN A MODIFIER",
@@ -35,6 +36,7 @@ class ProfilenfantparentsSeeder extends Seeder
             ],
             [
                 "personalId" => 2,
+                "section" => 1,
                 "name" => "Martin",
                 "imgFace" => "LIEN A MODIFIER",
                 "contrat" => "LIEN A MODIFIER",

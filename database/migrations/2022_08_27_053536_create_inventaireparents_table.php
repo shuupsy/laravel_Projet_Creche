@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->integer("personalId");
             $table->string("name");
-            $table->integer("number");
+            $table->integer("quantity");
             $table->string("img");
             $table->timestamps();
         });

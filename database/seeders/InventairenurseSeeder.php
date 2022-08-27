@@ -18,47 +18,47 @@ class InventairenurseSeeder extends Seeder
         DB::table("inventairenurses")->insert([
             [
                 "name" => "Produits d'entretien",
-                "number" => 3,
+                "quantity" => 3,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "name" => "Couche",
-                "number" => 34,
+                "quantity" => 34,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "name" => "Savon",
-                "number" => 9,
+                "quantity" => 9,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "name" => "Désinfectant",
-                "number" => 1,
+                "quantity" => 1,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "name" => "Savon partie intime",
-                "number" => 2,
+                "quantity" => 2,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "name" => "Serum physiologique",
-                "number" => 6,
+                "quantity" => 6,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "name" => "Coton tige",
-                "number" => 10,
+                "quantity" => 10,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "name" => "Crème pour les fesses",
-                "number" => 0,
+                "quantity" => 0,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "name" => "Elastiques pour cheveux",
-                "number" => 23,
+                "quantity" => 23,
                 "img" => "LIEN A MODIFIER"
             ]
         ]);

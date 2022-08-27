@@ -20,62 +20,62 @@ class InventaireparentsSeeder extends Seeder
             [
                 "personalId" => 1,
                 "name" => "Habits de rechange",
-                "number" => 5,
+                "quantity" => 5,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "personalId" => 1,
                 "name" => "Couche",
-                "number" => 12,
+                "quantity" => 12,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "personalId" => 1,
                 "name" => "Lait",
-                "number" => 3,
+                "quantity" => 3,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "personalId" => 1,
                 "name" => "Tute",
-                "number" => 1,
+                "quantity" => 1,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "personalId" => 1,
                 "name" => "Doudou",
-                "number" => 1,
+                "quantity" => 1,
                 "img" => "LIEN A MODIFIER"
             ],
             //enfant avec id unique 2
             [
                 "personalId" => 2,
                 "name" => "Habits de rechange",
-                "number" => 7,
+                "quantity" => 7,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "personalId" => 2,
                 "name" => "Couche",
-                "number" => 9,
+                "quantity" => 9,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "personalId" => 2,
                 "name" => "Lait",
-                "number" => 1,
+                "quantity" => 1,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "personalId" => 2,
                 "name" => "Tute",
-                "number" => 2,
+                "quantity" => 2,
                 "img" => "LIEN A MODIFIER"
             ],
             [
                 "personalId" => 2,
                 "name" => "Doudou",
-                "number" => 1,
+                "quantity" => 1,
                 "img" => "LIEN A MODIFIER"
             ]
         ]);
