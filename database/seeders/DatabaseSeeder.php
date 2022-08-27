@@ -23,8 +23,8 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call([
             InventaireparentsSeeder::class,
-            InventairenurseSeeder::class
-
+            InventairenurseSeeder::class,
+            ProfilenfantparentsSeeder::class
         ]);
     }
 }

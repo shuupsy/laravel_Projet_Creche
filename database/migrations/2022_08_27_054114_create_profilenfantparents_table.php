@@ -15,6 +15,21 @@ return new class extends Migration
     {
         Schema::create('profilenfantparents', function (Blueprint $table) {
             $table->id();
+            $table->integer("personalId");
+            $table->string("name");
+            $table->string("imgFace");
+            $table->string("contrat");
+            $table->string("nutritional");
+            $table->string("picturePermission");
+            $table->string("exitPermission");
+            $table->string("allergy");
+            $table->string("size");
+            $table->string("weight");
+            $table->string("surveillanceSelles");
+            $table->string("teething");
+            $table->string("birthday");
+            $table->string("presence");
+            $table->string("dayOfPresence");
             $table->timestamps();
         });
     }
