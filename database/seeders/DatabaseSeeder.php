@@ -24,7 +24,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             InventaireparentsSeeder::class,
             InventairenurseSeeder::class,
-            ProfilenfantparentsSeeder::class
+            ProfilenfantparentsSeeder::class,
+            MessagerieparentsSeeder::class,
+            MessagerienurseSeeder::class
         ]);
     }
 }
