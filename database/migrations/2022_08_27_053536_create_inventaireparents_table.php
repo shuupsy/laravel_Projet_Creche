@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('inventaireparents', function (Blueprint $table) {
             $table->id();
+            $table->integer("personalId");
+            $table->string("name");
+            $table->integer("number");
+            $table->string("img");
             $table->timestamps();
         });
     }
