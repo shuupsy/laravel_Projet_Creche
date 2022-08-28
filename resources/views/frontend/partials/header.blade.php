@@ -60,7 +60,7 @@
          <div class="profile-details">
            <div class="name_job">
              <div class="name">Sysy</div>
-             <div class="job">Puéricultrice</div>
+             <div class="job">Parent de ...</div>
            </div>
          </div>
          <i class='bx bx-log-out' id="log_out" ></i>
