@@ -5,5 +5,5 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('backend.pages.home');
+    return view('frontend.pages.journal');
 });
