@@ -1,4 +1,4 @@
-<div class="sidebar">
+<header class="sidebar">
     <div class="logo_details">
         <i class='bx bxs-baby-carriage'></i>
         <div class="logo_name">DAILY BABY</div>
@@ -21,7 +21,7 @@
        </a>
        <span class="tooltip">Calendrier</span>
      </li>
-     
+
      <li>
          <a href="#">
             <i class='bx bx-user'></i>
@@ -68,4 +68,4 @@
          <i class='bx bx-log-out' id="log_out" ></i>
      </li>
     </ul>
-  </div>
+  </header>

@@ -1,4 +1,4 @@
-<div class="sidebar">
+<header class="sidebar">
     <div class="logo_details">
         <i class='bx bxs-baby-carriage'></i>
         <div class="logo_name">DAILY BABY</div>
@@ -7,7 +7,7 @@
 
     <ul class="nav-list">
       <li>
-        <a href="#">
+        <a href='{{ Route('home-nurses') }}'>
             <i class='bx bx-user'></i>
           <span class="links_name">Section</span>
         </a>
@@ -21,7 +21,7 @@
        <span class="tooltip">Calendrier</span>
      </li>
      <li>
-       <a href="#">
+       <a href='{{ Route('inventaire-nurses') }}'>
         <i class='bx bx-shopping-bag'></i>
          <span class="links_name">Inventaire</span>
        </a>
@@ -45,4 +45,4 @@
          <i class='bx bx-log-out' id="log_out" ></i>
      </li>
     </ul>
-  </div>
+  </header>

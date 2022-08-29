@@ -10,9 +10,10 @@ Route::get('/', function () {
     return view('frontend.pages.journal');
 });
 
-Route::get('/homeNurses', [HomenurseController::class, 'index'])->name('Home');
 
-Route::get('/InventaireNurses', [InventairenurseController::class, 'index'])->name('InventaireNurses');
+Route::get('/home-nurses', [HomenurseController::class, 'index'])->name('home-nurses');
+
+Route::get('/inventaire-nurses', [InventairenurseController::class, 'index'])->name('inventaire-nurses');
 
 Route::get('/profile', function(){
     return view('backend.pages.profilEnfant');
