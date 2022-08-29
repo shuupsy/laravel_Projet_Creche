@@ -8,7 +8,7 @@
     <ul class="nav-list">
       <li>
         <a href="#">
-            <i class='bx bx-calendar-event'></i>
+            <i class='bx bx-task'></i>
           <span class="links_name">Journal</span>
         </a>
          <span class="tooltip">Journal</span>
