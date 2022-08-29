@@ -13,6 +13,7 @@
         </a>
          <span class="tooltip">Journal</span>
       </li>
+
       <li>
        <a href="#">
         <i class='bx bx-calendar'></i>
@@ -20,6 +21,7 @@
        </a>
        <span class="tooltip">Calendrier</span>
      </li>
+     
      <li>
          <a href="#">
             <i class='bx bx-user'></i>

@@ -13,3 +13,7 @@ Route::get('/', function () {
 Route::get('/homeNurses', [HomenurseController::class, 'index'])->name('Home');
 
 Route::get('/InventaireNurses', [InventairenurseController::class, 'index'])->name('InventaireNurses');
+
+Route::get('/profile', function(){
+    return view('backend.pages.profilEnfant');
+});
