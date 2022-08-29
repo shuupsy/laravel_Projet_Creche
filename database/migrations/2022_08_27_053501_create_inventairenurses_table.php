@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('inventairenurses', function (Blueprint $table) {
             $table->id();
-            $table->string("name");
+            $table->string("name")->nullable();
             $table->integer("quantity");
-            $table->string("img");
+            $table->string("img")->nullable();
             $table->timestamps();
         });
     }

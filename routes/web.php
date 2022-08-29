@@ -13,3 +13,5 @@ Route::get('/', function () {
 Route::get('/homeNurses', [HomenurseController::class, 'index'])->name('Home');
 
 Route::get('/InventaireNurses', [InventairenurseController::class, 'index'])->name('InventaireNurses');
+
+Route::patch('/InventaireNurses/{id}/update', [InventairenurseController::class, 'update']);
