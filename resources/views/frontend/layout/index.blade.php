@@ -17,7 +17,7 @@
     <header>
         @include('frontend.partials.header')
     </header>
-<main class="mx-auto w-9/12 pl-16">
+<main>
     @yield('content')
 </main>
     <script src="assets/js/main.js"></script>

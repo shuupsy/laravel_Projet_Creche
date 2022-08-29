@@ -15,7 +15,8 @@ class InventaireparentsController extends Controller
      */
     public function index()
     {
-        //
+        $inventaire = Inventaireparents::all();
+        return view('frontend.pages.inventaire', compact('inventaire'));
     }
 
     /**

@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use App\Models\Inventairenurse;
 use App\Http\Requests\StoreInventairenurseRequest;
 use App\Http\Requests\UpdateInventairenurseRequest;
-use App\Models\Inventairenurse;
 
 class InventairenurseController extends Controller
 {
@@ -16,7 +17,7 @@ class InventairenurseController extends Controller
     public function index()
     {
         $inventaire = Inventairenurse::all();
-        return view('frontend.pages.inventaireNurses', compact('inventaire'));
+        return view('backend.pages.inventaireNurses', compact('inventaire'));
     }
 
     /**
@@ -69,9 +70,12 @@ class InventairenurseController extends Controller
      * @param  \App\Models\Inventairenurse  $inventairenurse
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateInventairenurseRequest $request, Inventairenurse $inventairenurse)
+    public function update(Request $request, $id)
     {
-        //
+        $inventaire = Inventairenurse::find($id);
+        $inventaire -> quantity = $request -> quantity;
+        $inventaire -> save();
+        return redirect()->back();
     }
 
     /**
@@ -83,5 +87,10 @@ class InventairenurseController extends Controller
     public function destroy(Inventairenurse $inventairenurse)
     {
         //
+    }
+
+    public function plus($id){
+        $product = Inventairenurse::find($id);
+        $product->increment('quantity');
     }
 }

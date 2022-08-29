@@ -15,7 +15,8 @@ class CalendrierparentsController extends Controller
      */
     public function index()
     {
-        //
+        $data = Calendrierparents::all();
+        return view('frontend.pages.calendrier', compact('data'));
     }
 
     /**
@@ -25,7 +26,7 @@ class CalendrierparentsController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
