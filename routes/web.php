@@ -17,6 +17,9 @@ Route::get('/InventaireNurses', [InventairenurseController::class, 'index'])->na
 
 Route::patch('/InventaireNurses/{id}/update', [InventairenurseController::class, 'update']);
 
+Route::patch('/InventaireNurses/{id}/plus', [InventairenurseController::class, 'plus']);
+Route::patch('/InventaireNurses/{id}/moins', [InventairenurseController::class, 'moins']);
+
 
 //route inventaire parents
 
@@ -34,3 +37,5 @@ Route::get('home-nurses', [HomenurseController::class, 'index'])->name('home-nur
 Route::get('/profile', function(){
     return view('backend.pages.profilEnfant');
 });
+
+
