@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('calendriernurses', function (Blueprint $table) {
             $table->id();
+            $table->string("day");
+            $table->integer("dateDay");
             $table->timestamps();
         });
     }

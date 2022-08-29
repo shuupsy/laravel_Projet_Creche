@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('administrationparents', function (Blueprint $table) {
             $table->id();
+            $table->string("title");
+            $table->integer("personalId");
+            $table->string("commentary");
+            $table->string("files");
             $table->timestamps();
         });
     }

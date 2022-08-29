@@ -15,6 +15,13 @@ return new class extends Migration
     {
         Schema::create('journalparents', function (Blueprint $table) {
             $table->id();
+            $table->integer("personalId");
+            $table->string("accident");
+            $table->string("eat");
+            $table->string("activity");
+            $table->string("day");
+            $table->string("arrivalTime");
+            $table->string("poo");
             $table->timestamps();
         });
     }

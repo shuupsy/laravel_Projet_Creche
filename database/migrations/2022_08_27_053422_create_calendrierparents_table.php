@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('calendrierparents', function (Blueprint $table) {
             $table->id();
+            $table->string("day");
+            $table->integer("dateDay");
             $table->timestamps();
         });
     }
