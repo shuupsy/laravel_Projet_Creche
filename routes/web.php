@@ -26,6 +26,9 @@ Route::get('/InventaireParents', [InventaireparentsController::class, 'index'])-
 
 Route::get('/calendrier', [CalendrierparentsController::class, 'index'])->name('calendrier');
 
+//route
+Route::get('home-nurses', [HomenurseController::class, 'index'])->name('home-nurses');
+
 
 //route profil Enfants (PUERI)
 Route::get('/profile', function(){

@@ -17,7 +17,7 @@ class HomenurseController extends Controller
     public function index()
     {
         $kids = Profilenfantparents::all();
-        return view('frontend.pages.Homenurse', compact('kids'));
+        return view('backend.pages.home', compact('kids'));
     }
 
     /**
