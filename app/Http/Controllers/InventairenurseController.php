@@ -15,7 +15,8 @@ class InventairenurseController extends Controller
      */
     public function index()
     {
-        //
+        $inventaire = Inventairenurse::all();
+        return view('frontend.pages.inventaireNurses', compact('inventaire'));
     }
 
     /**
