@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomenurseController;
 use App\Http\Controllers\InventairenurseController;
+use App\Http\Controllers\CalendrierparentsController;
 use App\Http\Controllers\InventaireparentsController;
 
 
@@ -19,4 +20,11 @@ Route::patch('/InventaireNurses/{id}/update', [InventairenurseController::class,
 
 
 
+//route inventaire parents
+
 Route::get('/InventaireParents', [InventaireparentsController::class, 'index'])->name('Inventaire');
+
+//route calendrier parents
+
+Route::get('/calendrier', [CalendrierparentsController::class, 'index'])->name('calendrier');
+
