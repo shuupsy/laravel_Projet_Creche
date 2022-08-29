@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,19 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     {{-- CSS --}}
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
 
     <title>Puéricultrice</title>
 </head>
-<body>
-    <header>
-        @include('backend.partials.header')
-    </header>
 
-    @yield('content')
+<body>
+    @include('backend.partials.header')
+
+    <main class='m-5 contenu'>
+        @yield('content')
+    </main>
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

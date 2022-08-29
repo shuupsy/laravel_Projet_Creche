@@ -10,16 +10,18 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     {{-- CSS --}}
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+
     <title>Parents</title>
 </head>
 
 <body>
-    <header>
-        @include('frontend.partials.header')
-    </header>
-<main>
-    @yield('content')
-</main>
+    @include('frontend.partials.header')
+
+    <main class='m-5 contenu'>
+        @yield('content')
+    </main>
+
     <script src="assets/js/main.js"></script>
 </body>
 
