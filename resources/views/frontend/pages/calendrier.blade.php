@@ -9,7 +9,7 @@
             <img class="w-12" src="https://www.svgrepo.com/show/38147/moon.svg" alt="">
         </div>
         <div class="flex flex-col">
-            <p>jour</p>
+            <p>{{$data[2]->day}}</p>
             <p>date</p>
         </div>
     </div>
