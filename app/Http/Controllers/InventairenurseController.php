@@ -73,9 +73,7 @@ class InventairenurseController extends Controller
     public function update(Request $request, $id)
     {
         $inventaire = Inventairenurse::find($id);
-        $inventaire -> name = $request -> name;
         $inventaire -> quantity = $request -> quantity;
-        $inventaire -> img = $request -> img;
         $inventaire -> save();
         return redirect()->back();
     }
@@ -93,7 +91,6 @@ class InventairenurseController extends Controller
 
     public function plus($id){
         $product = Inventairenurse::find($id);
-        $product->quantity = $product->quantity + 1;
-        Inventairenurse::update($id, $product->quantity);
+        $product->increment('quantity');
     }
 }
