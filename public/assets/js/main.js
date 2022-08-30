@@ -8,7 +8,7 @@ btn.onclick = function() {
 }
 
 /* MODAL */
-let buttonModal = document.getElementById("modalUn");
+let buttonModal = document.querySelector(".modalUn");
 
 let modalFull = document.getElementById("modalFull");
 buttonModal.addEventListener("click", ()=>{

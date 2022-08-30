@@ -1,7 +1,9 @@
 <header class="sidebar">
     <div class="logo_details">
-        <i class='bx bxs-baby-carriage'></i>
-        <div class="logo_name">DAILY BABY</div>
+        <a href="{{ Route('home-nurses') }}">
+            <i class='bx bxs-baby-carriage'></i>
+        </a>
+        <div class="logo_name"> <a href="{{ Route('home-nurses') }}">DAILY BABY</a></div>
     </div>
     <i class='bx bx-menu' id="btn" ></i>
 
@@ -42,7 +44,9 @@
              <div class="job">Puéricultrice</div>
            </div>
          </div>
-         <i class='bx bx-log-out' id="log_out" ></i>
+         <a href="/">
+             <i class='bx bx-log-out' id="log_out" ></i>
+         </a>
      </li>
     </ul>
   </header>

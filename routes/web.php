@@ -29,7 +29,7 @@ Route::get('/InventaireParents', [InventaireparentsController::class, 'index'])-
 
 Route::get('/calendrier', [CalendrierparentsController::class, 'index'])->name('calendrier');
 
-//route
+//route HOME
 Route::get('home-nurses', [HomenurseController::class, 'index'])->name('home-nurses');
 
 
@@ -38,4 +38,7 @@ Route::get('/profile', function(){
     return view('backend.pages.profilEnfant');
 });
 
+
+//route profil Enfant show
+Route::get('/kid/{id}', [HomenurseController::class, 'show']);
 

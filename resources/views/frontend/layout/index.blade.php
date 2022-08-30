@@ -13,18 +13,20 @@
     <link rel="stylesheet" href="/assets/css/media.css">
     <link rel="stylesheet" href="/assets/css/calendrier.css">
 
+
     <title>Parents</title>
 </head>
 
 <body>
     @include('frontend.partials.header')
 
-    <main class='m-5 contenu'>
+    <main class='contenu'>
         @yield('content')
     </main>
 
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/calendrier.js"></script>
+
 </body>
 
 </html>
