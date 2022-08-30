@@ -11,6 +11,7 @@
     {{-- CSS --}}
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/calendrier.css">
 
     <title>Parents</title>
 </head>
