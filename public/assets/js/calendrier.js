@@ -9,9 +9,14 @@ btnJour.forEach(element => {
     element.addEventListener("click", ()=>{
         btnJour.forEach(btn=>{
             btn.removeAttribute('class', 'activeDay');
-            contenu.removeAttribute('class', 'noShow');
+
         });
         element.setAttribute('class', 'activeDay');
-        contenu.setAttribute('class', 'contenuCalendrier');
+        if(contenu.classList.contains('contenuCalendrier')){
+            contenu.removeAttribute('class', 'contenuCalendrier');
+            contenu.setAttribute('class', 'noShow');
+        }else{
+            contenu.setAttribute('class', 'contenuCalendrier');
+        }
     });
  });
