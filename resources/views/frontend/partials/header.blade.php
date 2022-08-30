@@ -15,7 +15,7 @@
       </li>
 
       <li>
-       <a href="#">
+       <a href="{{ Route('calendrier')}}">
         <i class='bx bx-calendar'></i>
          <span class="links_name">Calendrier</span>
        </a>
@@ -65,7 +65,9 @@
              <div class="job">Parent de ...</div>
            </div>
          </div>
-         <i class='bx bx-log-out' id="log_out" ></i>
+         <a href="{{ Route('home-nurses') }}">
+            <i class='bx bx-log-out' id="log_out" ></i>
+        </a>
      </li>
     </ul>
   </header>

@@ -63,7 +63,7 @@
             <button>
                 <img src="assets/img/thermometer.svg" alt="svg thermometer sick">
             </button>
-            <p class='text-sm'>Température</p>
+            <p class='text-sm'>Fièvre</p>
         </div>
 
         <div class="rounded-lg border border-zinc-800 text-center">

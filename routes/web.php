@@ -26,7 +26,7 @@ Route::get('/InventaireParents', [InventaireparentsController::class, 'index'])-
 
 Route::get('/calendrier', [CalendrierparentsController::class, 'index'])->name('calendrier');
 
-//route
+//route HOME
 Route::get('home-nurses', [HomenurseController::class, 'index'])->name('home-nurses');
 
 

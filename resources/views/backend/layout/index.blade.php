@@ -18,7 +18,7 @@
 <body>
     @include('backend.partials.header')
 
-    <main class='m-5 contenu'>
+    <main class='contenu'>
         @yield('content')
     </main>
 
