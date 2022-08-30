@@ -102,7 +102,11 @@ class InventairenurseController extends Controller
 
     public function moins($id){
         $product = Inventairenurse::find($id);
-        $product->quantity -= 1;
+        if($product->quantity > 0) {
+            $product->quantity -= 1;
+        }else{
+            $product->quantity == 0;
+        }
         $product->save();
         return redirect()->back();
 
