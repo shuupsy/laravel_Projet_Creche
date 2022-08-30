@@ -1,7 +1,9 @@
 <header class="sidebar">
     <div class="logo_details">
-        <i class='bx bxs-baby-carriage'></i>
-        <div class="logo_name">DAILY BABY</div>
+        <a href="/">
+            <i class='bx bxs-baby-carriage'></i>
+        </a>
+        <div class="logo_name"><a href="/">DAILY BABY </a></div>
     </div>
     <i class='bx bx-menu' id="btn" ></i>
 
