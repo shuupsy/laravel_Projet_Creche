@@ -34,3 +34,6 @@ Route::get('home-nurses', [HomenurseController::class, 'index'])->name('home-nur
 Route::get('/profile', function(){
     return view('backend.pages.profilEnfant');
 });
+
+//route profil Enfant show
+Route::get('/kid/{id}', [HomenurseController::class, 'show']);

@@ -47,9 +47,10 @@ class HomenurseController extends Controller
      * @param  \App\Models\Homenurse  $homenurse
      * @return \Illuminate\Http\Response
      */
-    public function show(Homenurse $homenurse)
+    public function show($id)
     {
-        //
+        $id_kid = Profilenfantparents::find($id);
+        return view('backend.pages.profilEnfant', compact('id_kid'));
     }
 
     /**
