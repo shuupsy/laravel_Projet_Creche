@@ -28,7 +28,7 @@
     width:1.75rem;
     font-size: 18px;
     font-weight: 800;
-    background-color: #D8E2DC;
+    background-color: #57cc99;
 }
 
 .week{
@@ -37,4 +37,8 @@
     gap: 1rem;
     justify-content: space-around;
     padding: 1rem 1rem 0 1rem;
+}
+
+.activeDay {
+    background-color: #000;
 }
