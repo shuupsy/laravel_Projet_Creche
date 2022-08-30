@@ -1,3 +1,8 @@
+.containerCalendrier{
+    border-radius: 3rem;
+    height: auto;
+}
+
 .days{
     display: flex;
     flex-wrap: wrap;
@@ -23,14 +28,6 @@
                 width 500ms;
 }
 
-.days p:hover{
-    height: 1.75rem;
-    width:1.75rem;
-    font-size: 18px;
-    font-weight: 800;
-    background-color: #57cc99;
-}
-
 .week{
     display: flex;
     flex-wrap: wrap;
@@ -40,5 +37,48 @@
 }
 
 .activeDay {
-    background-color: #000;
+    height: 1.75rem;
+    width:1.75rem;
+    font-size: 18px;
+    font-weight: 800;
+    background-color: #8EC9C1;
+}
+
+.noShow{
+    opacity: 0;
+    height: 1rem;
+    transition:
+                opacity 500ms,
+                height 500ms,
+    ;
+}
+
+.contenuCalendrier{
+    opacity: 100%;
+    height: auto;
+    background-color: #D8E2DC;
+    width: 100%;
+    padding: 2rem 1rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.heures{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.activites {
+    background-color: #fff;
+    width: 75%;
+    height: 7rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+.titre{
+    font-weight: bold;
 }
