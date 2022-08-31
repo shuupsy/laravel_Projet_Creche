@@ -16,7 +16,11 @@
 </head>
 
 <body>
-    @include('backend.partials.header')
+    <header class="header">
+        <nav>@include('backend.partials.header')</nav>
+        <div>@include('backend.partials.headers')</div>
+    </header>
+
 
     <main class='contenu'>
         @yield('content')

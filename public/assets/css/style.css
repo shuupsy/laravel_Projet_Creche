@@ -233,3 +233,22 @@
     display: flex;
     justify-content: center;
 }
+
+
+.header{
+    display: grid;
+    grid-template-columns: .025fr 1fr;
+
+}
+
+.headers{
+    height: 4rem;
+    border-bottom:1px solid #CDD3DF;
+    padding: 1rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.contenu{
+    margin-top: 1.5rem;
+}
