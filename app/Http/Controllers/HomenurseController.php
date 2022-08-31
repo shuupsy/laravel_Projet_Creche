@@ -107,6 +107,13 @@ class HomenurseController extends Controller
         $data->save();
         return redirect()->back();
     }
+    public function updaterepas(UpdateHomenurseRequest $request,  $id)
+    {
+        $data = Journalparents::find($id);
+        $data->eat = $request->eat;
+        $data->save();
+        return redirect()->back();
+    }
 
     /**
      * Remove the specified resource from storage.
