@@ -18,63 +18,63 @@ class InventaireparentsSeeder extends Seeder
         DB::table("inventaireparents")->insert([
             //enfant avec id unique 1
             [
-                "personalId" => 1,
                 "name" => "Habits de rechange",
+                "profilenfantparent_id" => 1,
                 "quantity" => 5,
                 "img" => "LIEN A MODIFIER"
             ],
             [
-                "personalId" => 1,
                 "name" => "Couche",
+                "profilenfantparent_id" => 1,
                 "quantity" => 12,
                 "img" => "LIEN A MODIFIER"
             ],
             [
-                "personalId" => 1,
                 "name" => "Lait",
+                "profilenfantparent_id" => 1,
                 "quantity" => 3,
                 "img" => "LIEN A MODIFIER"
             ],
             [
-                "personalId" => 1,
                 "name" => "Tute",
+                "profilenfantparent_id" => 1,
                 "quantity" => 1,
                 "img" => "LIEN A MODIFIER"
             ],
             [
-                "personalId" => 1,
                 "name" => "Doudou",
+                "profilenfantparent_id" => 1,
                 "quantity" => 1,
                 "img" => "LIEN A MODIFIER"
             ],
             //enfant avec id unique 2
             [
-                "personalId" => 2,
                 "name" => "Habits de rechange",
+                "profilenfantparent_id" => 2,
                 "quantity" => 7,
                 "img" => "LIEN A MODIFIER"
             ],
             [
-                "personalId" => 2,
                 "name" => "Couche",
+                "profilenfantparent_id" => 2,
                 "quantity" => 9,
                 "img" => "LIEN A MODIFIER"
             ],
             [
-                "personalId" => 2,
                 "name" => "Lait",
+                "profilenfantparent_id" => 2,
                 "quantity" => 1,
                 "img" => "LIEN A MODIFIER"
             ],
             [
-                "personalId" => 2,
                 "name" => "Tute",
+                "profilenfantparent_id" => 2,
                 "quantity" => 2,
                 "img" => "LIEN A MODIFIER"
             ],
             [
-                "personalId" => 2,
                 "name" => "Doudou",
+                "profilenfantparent_id" => 2,
                 "quantity" => 1,
                 "img" => "LIEN A MODIFIER"
             ]

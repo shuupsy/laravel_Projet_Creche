@@ -17,13 +17,11 @@ class MessagerienurseSeeder extends Seeder
     {
         DB::table("messagerienurses")->insert([
         [
-            "personalId" => 1,
             "name" => "Virginia",
             "img" => "LIEN A MODIFIER",
             "message" => "Je démarre la balade !"
         ],
         [
-            "personalId" => 2,
             "name" => "Muriel",
             "img" => "LIEN A MODIFIER",
             "message" => "Bonjour je suis malade aujourdhui :("

@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('messagerienurses', function (Blueprint $table) {
             $table->id();
-            $table->integer("personalId");
             $table->string("name");
             $table->string("img");
             $table->string("message");

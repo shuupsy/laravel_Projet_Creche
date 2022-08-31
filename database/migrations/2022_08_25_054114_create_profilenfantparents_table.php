@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('profilenfantparents', function (Blueprint $table) {
             $table->id();
-            $table->integer("personalId");
-            $table->integer("section");
+            $table->string("section");
+            $table->string("genre");
             $table->string("name");
             $table->string("imgFace");
             $table->string("contrat");

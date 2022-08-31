@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('administrationparents', function (Blueprint $table) {
             $table->id();
             $table->string("title");
-            $table->integer("personalId");
+            $table->foreignId("profilenfantparent_id")->constrained();
             $table->string("commentary");
             $table->string("files");
             $table->timestamps();

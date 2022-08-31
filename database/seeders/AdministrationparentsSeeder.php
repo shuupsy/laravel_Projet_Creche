@@ -18,19 +18,19 @@ class AdministrationparentsSeeder extends Seeder
         DB::table("administrationparents")->insert([
             [
                 "title" => "Cértificat médical",
-                "personalId" => 1,
+                "profilenfantparent_id" => 1,
                 "commentary" => "du 01/09/2022 au 03/09/2022",
                 "files" => "LIEN A MODIFIER"
             ],
             [
                 "title" => "Vaccin",
-                "personalId" => 1,
+                "profilenfantparent_id" => 1,
                 "commentary" => "vaccin contre ?? effectué le 23/08/2022",
                 "files" => "LIEN A MODIFIER"
             ],
             [
                 "title" => "Autorisation",
-                "personalId" => 2,
+                "profilenfantparent_id" => 2,
                 "commentary" => "le frère peut venir chercher l'enfant, une copie de la carte d'id en copie",
                 "files" => "LIEN A MODIFIER"
             ]
