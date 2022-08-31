@@ -19,14 +19,6 @@
             <p class='text-sm'>Humeur</p>
         </div>
 
-        {{-- INVENTAIRE --}}
-        <div class="rounded-lg border border-zinc-800 text-center">
-            <button class="buttonModal">
-                <img src="/assets/img/backpack.svg" alt="svg inventory backpack">
-            </button>
-            <p class='text-sm'>Inventaire</p>
-        </div>
-
         {{-- ACTIVITE --}}
         <div class="rounded-lg border border-zinc-800 text-center">
             <button class="buttonModal">
@@ -94,5 +86,5 @@
     </div> {{-- FIN ICONES --}}
 
     @include('backend.partials.modal')
-    
+
 @endsection

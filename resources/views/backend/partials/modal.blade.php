@@ -105,27 +105,6 @@
     </div>
 </div>
 
-{{-- Modal INVENTAIRE --}}
-<div class="relative flex justify-center">
-    <div class='modalFull hidden'>
-        <div class="">
-            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
-
-            <div
-                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
-
-                <div class='text-center'>
-
-                    <h3 id="modal-title">INVENTAIRE</h3>
-
-                    <p>A FAIRE</p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
 {{-- Modal ACTIVITE --}}
 <div class="relative flex justify-center">
     <div class='modalFull hidden'>
@@ -160,7 +139,7 @@
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
 
             <div
-                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+                class="relativeé inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
 
                 <div class='text-center'>
 
