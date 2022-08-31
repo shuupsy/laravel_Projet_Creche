@@ -17,7 +17,45 @@
                 <p class="jsemaines">{{ $profil[0]->dayOfPresence }}</p>
             </div>
         </div>
-
+        <div class="timeline">
+            <div class="container left">
+                <div class="content">
+                    <img class="w-16 h-16 p-4 bg-[#D8E2DC] rounded-full"src="https://www.svgrepo.com/show/203133/ruler.svg" alt="">
+                  <p>{{ $profil[0]->size }}</p>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                    <img class="w-16 h-16 p-4 bg-[#D8E2DC] rounded-full"src="https://www.svgrepo.com/show/229297/scale-weight.svg" alt="">
+                  <p>{{ $profil[0]->weight}}</p>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                    <img class="w-16 h-16 p-4 bg-[#D8E2DC] rounded-full"src="https://www.svgrepo.com/show/385146/emergency-health-healthcare-hospital-kit-medical.svg" alt="">
+                  <p>{{ $profil[0]->allergy }}</p>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <img class="w-16 h-16 p-4 bg-[#D8E2DC] rounded-full"src="https://www.svgrepo.com/show/385145/dental-dentist-health-healthcare-medical-teeth.svg" alt="">
+                  <p>{{ $profil[0]->teething }}</p>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                    <img class="w-16 h-16 p-4 bg-[#D8E2DC] rounded-full"src="https://www.svgrepo.com/show/267696/baby-food.svg" alt="">
+                  <p>{{ $profil[0]->nutritional }}</p>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                    <img class="w-16 h-16 p-4 bg-[#D8E2DC] rounded-full"src="https://www.svgrepo.com/show/6666/photo-camera.svg" alt="">
+                  <p>{{ $profil[0]->picturePermission }}
+                   </p>
+                </div>
+              </div>
+        </div>
 
     </div>
 @endsection
