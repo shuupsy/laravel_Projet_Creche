@@ -8,28 +8,26 @@ btn.onclick = function () {
 }
 
 /* Apparition de modal */
-let buttonModal = document.querySelectorAll(".modalUn");
+let buttonModal = document.querySelectorAll(".buttonModal");
 let modalFull = document.querySelectorAll(".modalFull");
+console.log(buttonModal)
+console.log(modalFull)
 
 buttonModal.forEach((button, index) => {
     button.addEventListener("click", () => {
         modalFull[index].classList.toggle("hidden")
     })
 } )
-/* buttonModal.addEventListener("click", () => {
-    modalFull.classList.toggle("hidden")
-}) */
 
 // Heure actuelle
 let clock = document.querySelector('#clock')
-hour()
+
 function hour(){
     let currentTime = new Date();
-    let time = currentTime.getHours() + ' : ' + currentTime.getMinutes();
+    let minutes = ('0'+ currentTime.getMinutes()).slice(-2);
+    let time = currentTime.getHours() + ' : ' + minutes;
     clock.innerHTML = time;
 }
 
-/* setInterval(hour, 1000)
- */
-setInterval(hour, 6000)
+hour(), setInterval(hour, 6000)
 
