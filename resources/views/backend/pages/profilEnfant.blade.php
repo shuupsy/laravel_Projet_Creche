@@ -94,4 +94,5 @@
     </div> {{-- FIN ICONES --}}
 
     @include('backend.partials.modal')
+    
 @endsection

@@ -10,8 +10,6 @@ btn.onclick = function () {
 /* Apparition de modal */
 let buttonModal = document.querySelectorAll(".buttonModal");
 let modalFull = document.querySelectorAll(".modalFull");
-console.log(buttonModal)
-console.log(modalFull)
 
 buttonModal.forEach((button, index) => {
     button.addEventListener("click", () => {
