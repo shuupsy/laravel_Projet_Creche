@@ -93,3 +93,102 @@
         </div>
     </div>
 </div>
+
+{{-- Modal INVENTAIRE --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div class='text-center'>
+
+                    <h3 id="modal-title">INVENTAIRE</h3>
+
+                    <p>A FAIRE</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{-- Modal ACTIVITE --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div>
+
+                    <h3 class='text-center' id="modal-title">ACTIVITÉ</h3>
+
+                    <form>
+                        @csrf
+                        <label for="activity">Description</label>
+                        <textarea name="activity" id="activity" cols="30" rows="5" class='placeholder:text-slate-400 bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-[#8EC9C1] focus:ring-[#8EC9C1] focus:ring-1 sm:text-sm'></textarea>
+                        <button type='submit' class='text-sm border p-2 rounded-md bg-[#57cc99]'>VALIDER</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{-- Modal REPAS --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div class='text-center'>
+
+                    <h3 id="modal-title">Comment {{ $id_kid -> name }} a mangé aujourd'hui ?</h3>
+
+                    <form>
+                        <div class='flex' id='list_weather'>
+                            {{-- COLERE --}}
+                            <div class='meteo'>
+                                <label for="lightning">Pas bien</label>
+                                <input type="radio" name='humeur' value="colere" id="lightning">
+                            </div>
+
+                            {{-- TRISTE --}}
+                            <div class='meteo'>
+                                <label for="rain">Moyen</label>
+                                <input type="radio" name='humeur' value="triste" id="rain">
+                            </div>
+
+                            {{-- AGITE --}}
+                            <div class='meteo'>
+                                <label for="wind">Bien</label>
+                                <input type="radio" name='humeur' value="agite" id="wind">
+                            </div>
+
+                            {{-- STRESS --}}
+                            <div class='meteo'>
+                                <label for="cloud">Très bien</label>
+                                <input type="radio" name='humeur' value="distrait" id="cloud">
+                            </div>
+
+
+                        </div>
+
+                        <button type='submit' class='text-sm border p-2 rounded-md bg-[#57cc99]'>VALIDER</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -28,4 +28,3 @@ function hour(){
 }
 
 hour(), setInterval(hour, 6000)
-
