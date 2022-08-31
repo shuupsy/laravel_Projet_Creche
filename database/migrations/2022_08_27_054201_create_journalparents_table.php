@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string("activity");
             $table->string("day");
             $table->string("arrivalTime");
+            $table->string("humeur");
             $table->string("departTime");
             $table->integer("poo");
             $table->timestamps();

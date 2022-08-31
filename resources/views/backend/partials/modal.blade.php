@@ -12,12 +12,21 @@
                     <h3 id="modal-title">Horaire d'Arrivée / de Sortie</h3>
 
                     <h2 id='clock'
-                        class='mx-auto my-3 border-double border-4 w-20 font-black border-stone-800 rounded-md'></h2>
+                    class='mx-auto my-3 border-double border-4 w-20 font-black border-stone-800 rounded-md'>
+                </h2>
 
-                    <button class='text-sm border bg-[#D8E2DC] p-2 rounded-md'>ARRIVÉE (matin)</button>
-                    <button class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>SORTIE (soir)</button>
-                    <p class='text-xs'><span class='underline'>Guide:</span> Appuyez sur un des 2 boutons pour
-                        enregistrer automatiquement l'heure d'arrivée/sortie.</p>
+                <form action="{{$id_kid->id}}/updatehoursmatin" method="POST">
+                    @csrf
+                    @method("PUT")
+                    <button value="{{date('TH:i:s')}}" name="arrivalTime" type="submit" class='text-sm border bg-[#D8E2DC] p-2 rounded-md'>ARRIVÉE (matin)</button>
+                </form>
+                <form action="{{$id_kid->id}}/updatehourssoir" method="POST">
+                    @csrf
+                    @method("PUT")
+                    <button type="submit" value="{{date('TH:i:s')}}" name="departTime" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>SORTIE (soir)</button></form>
+
+                        <p class='text-xs'><span class='underline'>Guide:</span> Appuyez sur un des 2 boutons pour
+                            enregistrer automatiquement l'heure d'arrivée/sortie.</p>
                 </div>
 
             </div>
@@ -38,7 +47,9 @@
 
                     <h3 id="modal-title">Humeur en météo</h3>
 
-                    <form>
+                    <form action="{{$id_kid->id}}/updatehumeur" method="POST">
+                        @csrf
+                        @method("PUT")
                         <div class='flex' id='list_weather'>
                             {{-- COLERE --}}
                             <div class='meteo'>

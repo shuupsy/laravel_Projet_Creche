@@ -27,7 +27,8 @@ class JournalparentsSeeder extends Seeder
                 "sleep" => 3,
                 "poo" => 3,
                 "change" => 2,
-                "temperature" => 38.7
+                "temperature" => 38.7,
+                "humeur" => "joyeux"
             ],
             [
                 "accident" => "tombé sur la main droite",
@@ -40,7 +41,8 @@ class JournalparentsSeeder extends Seeder
                 "sleep" => 2.30,
                 "poo" => 1,
                 "temperature" => 36.7,
-                "change" => 1
+                "change" => 1,
+                "humeur" => "triste"
             ],
         ]);
     }
