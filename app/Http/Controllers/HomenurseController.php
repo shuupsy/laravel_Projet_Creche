@@ -93,6 +93,20 @@ class HomenurseController extends Controller
         $data->save();
         return redirect()->back();
     }
+    public function updateactivite(UpdateHomenurseRequest $request,  $id)
+    {
+        $data = Journalparents::find($id);
+        $data->activity = $request->activity;
+        $data->save();
+        return redirect()->back();
+    }
+    public function updatesommeil(UpdateHomenurseRequest $request,  $id)
+    {
+        $data = Journalparents::find($id);
+        $data->sleep = $request->sleep;
+        $data->save();
+        return redirect()->back();
+    }
 
     /**
      * Remove the specified resource from storage.

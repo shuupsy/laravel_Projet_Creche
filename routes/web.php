@@ -45,3 +45,5 @@ Route::get('/kid/{id}', [HomenurseController::class, 'show']);
 Route::put("/kid/{id}/updatehoursmatin", [HomenurseController::class,"updatematin"]);
 Route::put("/kid/{id}/updatehourssoir", [HomenurseController::class,"updatesoir"]);
 Route::put("/kid/{id}/updatehumeur", [HomenurseController::class,"updatehumeur"]);
+Route::put("/kid/{id}/updateactivite", [HomenurseController::class,"updateactivite"]);
+Route::put("/kid/{id}/updatesommeil", [HomenurseController::class,"updatesommeil"]);
