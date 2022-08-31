@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div class="drop-shadow-md bg-white w-80 mt-16 rounded-lg">
+    <div class="containerCalendrier drop-shadow-md bg-white w-80 mt-16">
         <div class="flex gap-4 p-4 place-content-around items-center">
             <div>
                 <img class="w-12" src="https://www.svgrepo.com/show/108654/mercury.svg" alt="">
@@ -25,6 +25,22 @@
             @foreach ($data as $jour)
                 <p id="btnJour" onclick="">{{$jour->dateDay}}</p>
             @endforeach
+        </div>
+        <div class="noShow">
+            <div class="heures">
+                <p>10h</p>
+                <p>12h</p>
+                <p>14h</p>
+                <p>16h</p>
+            </div>
+            <div class="activites">
+                <p class="titre">
+                    activité
+                </p>
+                <p>
+                    00.00 - 00.00
+                </p>
+            </div>
         </div>
     </div>
 @endsection
