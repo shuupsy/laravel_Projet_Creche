@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId("profilenfantparent_id")->constrained();
             $table->string("day");
             $table->integer("dateDay");
+            $table->string("activity");
             $table->timestamps();
         });
     }
