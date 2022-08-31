@@ -139,8 +139,9 @@
 
                     <h3 class='text-center' id="modal-title">ACTIVITÉ</h3>
 
-                    <form>
+                    <form action="{{$id_kid->id}}/updateactivite" method="POST">
                         @csrf
+                        @method("PUT")
                         <label for="activity">Description</label>
                         <textarea name="activity" id="activity" cols="30" rows="5" class='placeholder:text-slate-400 bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-[#8EC9C1] focus:ring-[#8EC9C1] focus:ring-1 sm:text-sm'></textarea>
                         <button type='submit' class='text-sm border p-2 rounded-md bg-[#57cc99]'>VALIDER</button>
@@ -204,7 +205,7 @@
     </div>
 </div>
 
-{{-- Modal REPAS --}}
+{{-- Modal SOMMEIL --}}
 <div class="relative flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
@@ -217,17 +218,19 @@
 
                     <h3 id="modal-title">Durée de la sieste</h3>
 
-                    <form>
+                    <form action="{{$id_kid->id}}/updatesommeil" method="POST">
+                        @csrf
+                        @method("PUT")
                         <select name="sleep" id='sleep_option' class='focus:outline-none' multiple>
                             <option value="0" class='rounded-lg text-center border border-blue-500 cursor-pointer'>X</option>
-                            <option value="0:30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>0:30</option>
-                            <option value="1:30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>1:00</option>
-                            <option value="1:30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>1:30</option>
-                            <option value="2:00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>2:00</option>
-                            <option value="2:30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>2:30</option>
-                            <option value="3:00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>3:00</option>
-                            <option value="3:30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>3:30</option>
-                            <option value=">4:00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>≥ 4:00</option>
+                            <option value="0.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>0:30</option>
+                            <option value="1.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>1:00</option>
+                            <option value="1.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>1:30</option>
+                            <option value="2.00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>2:00</option>
+                            <option value="2.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>2:30</option>
+                            <option value="3.00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>3:00</option>
+                            <option value="3.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>3:30</option>
+                            <option value=">4.00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>≥ 4:00</option>
                         </select>
                         <button type='submit' class='text-sm border p-2 rounded-md bg-[#57cc99]'>VALIDER</button>
                     </form>
