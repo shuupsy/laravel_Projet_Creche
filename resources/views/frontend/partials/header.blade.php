@@ -25,7 +25,7 @@
      </li>
 
      <li>
-         <a href="#">
+         <a href="{{route('ProfilEnfant')}}">
             <i class='bx bx-user'></i>
            <span class="links_name">Profil Enfant</span>
          </a>
