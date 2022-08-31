@@ -15,13 +15,17 @@ return new class extends Migration
     {
         Schema::create('journalparents', function (Blueprint $table) {
             $table->id();
-            $table->integer("personalId");
+            $table->foreignId("profilenfantparent_id")->constrained();
             $table->string("accident");
             $table->string("eat");
+            $table->float("sleep");
+            $table->float("temperature");
+            $table->integer("change");
             $table->string("activity");
             $table->string("day");
             $table->string("arrivalTime");
-            $table->string("poo");
+            $table->string("departTime");
+            $table->integer("poo");
             $table->timestamps();
         });
     }

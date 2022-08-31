@@ -17,22 +17,30 @@ class JournalparentsSeeder extends Seeder
     {
         DB::table("journalparents")->insert([
             [
-                "personalId" => "1",
                 "accident" => "none",
-                "eat" => "pomme de terre harricot",
+                "profilenfantparent_id" => 1,
+                "eat" => "TB",
                 "activity" => "coloriage + peinture",
                 "day" => "07 septembre 2022",
                 "arrivalTime" => "7:45",
-                "poo" => "11h30"
+                "departTime" => "17:30",
+                "sleep" => 3,
+                "poo" => 3,
+                "change" => 2,
+                "temperature" => 38.7
             ],
             [
-                "personalId" => "2",
                 "accident" => "tombé sur la main droite",
-                "eat" => "pomme de terre harricot",
+                "profilenfantparent_id" => 2,
+                "eat" => "PB",
                 "activity" => "peinture",
                 "day" => "07 septembre 2022",
                 "arrivalTime" => "9:25",
-                "poo" => "15h30"
+                "departTime" => "17:45",
+                "sleep" => 2.30,
+                "poo" => 1,
+                "temperature" => 36.7,
+                "change" => 1
             ],
         ]);
     }

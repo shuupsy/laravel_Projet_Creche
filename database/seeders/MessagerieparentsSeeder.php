@@ -17,16 +17,16 @@ class MessagerieparentsSeeder extends Seeder
     {
         DB::table("messagerieparents")->insert([
             [
-                "personalId" => 1,
                 "section" => 2,
                 "name" => "Emilie",
+                "profilenfantparent_id" => 1,
                 "img" => "LIEN A MODIFIER",
                 "message" => "Bonjour j'aurais un petit retard !"
             ],
             [
-                "personalId" => 2,
                 "section" => 1,
                 "name" => "Sophie",
+                "profilenfantparent_id" => 2,
                 "img" => "LIEN A MODIFIER",
                 "message" => "Bonjour je n'ai pas encore mangé aujourdhui ;("
             ]

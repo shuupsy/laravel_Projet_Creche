@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('messagerieparents', function (Blueprint $table) {
             $table->id();
-            $table->integer("personalId");
+            $table->foreignId("profilenfantparent_id")->constrained();
             $table->integer("section");
             $table->string("name");
             $table->string("img");

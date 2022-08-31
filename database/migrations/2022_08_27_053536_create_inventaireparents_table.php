@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('inventaireparents', function (Blueprint $table) {
             $table->id();
-            $table->integer("personalId");
+            $table->foreignId("profilenfantparent_id")->constrained();
             $table->string("name");
             $table->integer("quantity");
             $table->string("img");
