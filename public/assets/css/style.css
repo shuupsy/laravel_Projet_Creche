@@ -266,6 +266,7 @@
 .header {
     display: grid;
     grid-template-columns: .025fr 1fr;
+    padding: 1rem 0;
 
 }
 
@@ -275,6 +276,9 @@
     padding: 1rem 4rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 32px;
 }
 
 .contenu {

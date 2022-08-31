@@ -5,6 +5,7 @@ use App\Http\Controllers\HomenurseController;
 use App\Http\Controllers\InventairenurseController;
 use App\Http\Controllers\CalendrierparentsController;
 use App\Http\Controllers\InventaireparentsController;
+use App\Http\Controllers\ProfilenfantparentsController;
 
 
 
@@ -42,8 +43,15 @@ Route::get('/profile', function(){
 //route profil Enfant show
 Route::get('/kid/{id}', [HomenurseController::class, 'show']);
 
+
 Route::put("/kid/{id}/updatehoursmatin", [HomenurseController::class,"updatematin"]);
 Route::put("/kid/{id}/updatehourssoir", [HomenurseController::class,"updatesoir"]);
 Route::put("/kid/{id}/updatehumeur", [HomenurseController::class,"updatehumeur"]);
 Route::put("/kid/{id}/updateactivite", [HomenurseController::class,"updateactivite"]);
 Route::put("/kid/{id}/updatesommeil", [HomenurseController::class,"updatesommeil"]);
+
+
+
+//Route profil Enfant Parent
+Route::get('/ProfilEnfant', [ProfilenfantparentsController::class, 'index'])->name('ProfilEnfant');
+

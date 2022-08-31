@@ -1,0 +1,63 @@
+.contenuProfil{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infosGen{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prenom{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.presences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D8E2DC;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.donneesPresence{
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+
+}
+
+.jour{
+    font-size: 3.25rem;
+    font-weight: bold;
+}
+
+.joursPresence {
+    text-transform: uppercase;
+    width: 6.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1rem;
+    height: 3rem;
+    justify-content: center;
+}
+.semaine{
+    font-size: .65rem;
+}
+
+.jsemaines{
+    font-size: 12px;
+    text-align: center;
+
+}

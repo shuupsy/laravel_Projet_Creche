@@ -15,7 +15,8 @@ class ProfilenfantparentsController extends Controller
      */
     public function index()
     {
-        //
+        $profil = Profilenfantparents::all();
+        return view('frontend.pages.profilEnfant', compact('profil'));
     }
 
     /**
