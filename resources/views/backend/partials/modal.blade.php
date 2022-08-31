@@ -192,3 +192,38 @@
         </div>
     </div>
 </div>
+
+{{-- Modal REPAS --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div class='text-center'>
+
+                    <h3 id="modal-title">Durée de la sieste</h3>
+
+                    <form>
+                        <select name="sleep" id='sleep_option' multiple>
+                            <option value="0" class='w-11 text-xs'>X</option>
+                            <option value="0:30" class='w-11 text-xs'>0:30</option>
+                            <option value="1:30" class='w-11 text-xs'>1:00</option>
+                            <option value="1:30" class='w-11 text-xs'>1:30</option>
+                            <option value="2:00" class='w-11 text-xs'>2:00</option>
+                            <option value="2:30" class='w-11 text-xs'>2:30</option>
+                            <option value="3:00" class='w-11 text-xs'>3:00</option>
+                            <option value="3:30" class='w-11 text-xs'>3:30</option>
+                            <option value=">4:00" class='w-11 text-xs'>≥ 4:00</option>
+                        </select>
+                        <button type='submit' class='text-sm border p-2 rounded-md bg-[#57cc99]'>VALIDER</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
