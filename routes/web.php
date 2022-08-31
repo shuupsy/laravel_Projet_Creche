@@ -42,6 +42,7 @@ Route::get('/profile', function(){
 //route profil Enfant show
 Route::get('/kid/{id}', [HomenurseController::class, 'show']);
 
+//route update profil enfant
 Route::put("/kid/{id}/updatehoursmatin", [HomenurseController::class,"updatematin"]);
 Route::put("/kid/{id}/updatehourssoir", [HomenurseController::class,"updatesoir"]);
 Route::put("/kid/{id}/updatehumeur", [HomenurseController::class,"updatehumeur"]);
