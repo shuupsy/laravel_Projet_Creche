@@ -221,7 +221,7 @@
     </div>
 </div>
 
-{{-- Modal CHANGE (EN COURS) --}}
+{{-- Modal CHANGE --}}
 <div class="relative flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
@@ -232,32 +232,26 @@
 
                 <div class='text-center'>
 
-                    <h3 id="modal-title">Horaire d'Arrivée / de Sortie</h3>
+                    <h3 id="modal-title">{{ $id_kid -> name }} a été changé.</h3>
 
-                    <h2 id='clock'
-                    class='mx-auto my-3 border-double border-4 w-20 font-black border-stone-800 rounded-md'>
                 </h2>
 
-                <form action="{{$id_kid->id}}/updatehoursmatin" method="POST">
-                    @csrf
-                    @method("PUT")
-                    <button value="{{date('TH:i:s')}}" name="arrivalTime" type="submit" class='text-sm border bg-[#D8E2DC] p-2 rounded-md'>ARRIVÉE (matin)</button>
-                </form>
-                <form action="{{$id_kid->id}}/updatehourssoir" method="POST">
-                    @csrf
-                    @method("PUT")
-                    <button type="submit" value="{{date('TH:i:s')}}" name="departTime" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>SORTIE (soir)</button></form>
+                <button class='text-sm border bg-slate-50 p-2 rounded-md'>NON</button>
 
-                        <p class='text-xs'><span class='underline'>Guide:</span> Appuyez sur un des 2 boutons pour
-                            enregistrer automatiquement l'heure d'arrivée/sortie.</p>
-                </div>
+                <form action="{{$id_kid->id}}/updatechange" method="POST">
+                    @csrf
+                    @method("PUT")
+
+                    <button type="submit" name="change" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>OUI</button>
+                </form>
+
 
             </div>
         </div>
     </div>
 </div>
 
-{{-- Modal DIARRHEE (PAS FAIT) --}}
+{{-- Modal DIARRHEE --}}
 <div class="relative flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
@@ -268,30 +262,27 @@
 
                 <div class='text-center'>
 
-                    <h3 id="modal-title">Horaire d'Arrivée / de Sortie</h3>
+                    <h3 id="modal-title">Diarrhée ?</h3>
+                    <p class='text-xs'><span class='underline'>Rappel:</span> A 3 diarrhées par jour, l'enfant devra retourner à la maison.</p>
+                    <p class='text-xs'>Restant: <span>[...]</span></p>
 
-                    <h2 id='clock'
-                    class='mx-auto my-3 border-double border-4 w-20 font-black border-stone-800 rounded-md'>
                 </h2>
 
-                <form action="{{$id_kid->id}}/updatehoursmatin" method="POST">
-                    @csrf
-                    @method("PUT")
-                    <button value="{{date('TH:i:s')}}" name="arrivalTime" type="submit" class='text-sm border bg-[#D8E2DC] p-2 rounded-md'>ARRIVÉE (matin)</button>
-                </form>
-                <form action="{{$id_kid->id}}/updatehourssoir" method="POST">
-                    @csrf
-                    @method("PUT")
-                    <button type="submit" value="{{date('TH:i:s')}}" name="departTime" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>SORTIE (soir)</button></form>
+                <button class='text-sm border bg-slate-50 p-2 rounded-md'>NON</button>
 
-                        <p class='text-xs'><span class='underline'>Guide:</span> Appuyez sur un des 2 boutons pour
-                            enregistrer automatiquement l'heure d'arrivée/sortie.</p>
-                </div>
+                <form action="{{$id_kid->id}}/updatepoo" method="POST">
+                    @csrf
+                    @method("PUT")
+
+                    <button type="submit" name="poo" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>OUI</button>
+                </form>
+
 
             </div>
         </div>
     </div>
 </div>
+
 
 {{-- Modal FIEVRE (PAS FAIT) --}}
 <div class="relative flex justify-center">
