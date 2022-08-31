@@ -218,16 +218,16 @@
                     <h3 id="modal-title">Durée de la sieste</h3>
 
                     <form>
-                        <select name="sleep" id='sleep_option' multiple>
-                            <option value="0" class='w-11 text-xs'>X</option>
-                            <option value="0:30" class='w-11 text-xs'>0:30</option>
-                            <option value="1:30" class='w-11 text-xs'>1:00</option>
-                            <option value="1:30" class='w-11 text-xs'>1:30</option>
-                            <option value="2:00" class='w-11 text-xs'>2:00</option>
-                            <option value="2:30" class='w-11 text-xs'>2:30</option>
-                            <option value="3:00" class='w-11 text-xs'>3:00</option>
-                            <option value="3:30" class='w-11 text-xs'>3:30</option>
-                            <option value=">4:00" class='w-11 text-xs'>≥ 4:00</option>
+                        <select name="sleep" id='sleep_option' class='focus:outline-none' multiple>
+                            <option value="0" class='rounded-lg text-center border border-blue-500 cursor-pointer'>X</option>
+                            <option value="0:30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>0:30</option>
+                            <option value="1:30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>1:00</option>
+                            <option value="1:30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>1:30</option>
+                            <option value="2:00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>2:00</option>
+                            <option value="2:30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>2:30</option>
+                            <option value="3:00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>3:00</option>
+                            <option value="3:30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>3:30</option>
+                            <option value=">4:00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>≥ 4:00</option>
                         </select>
                         <button type='submit' class='text-sm border p-2 rounded-md bg-[#57cc99]'>VALIDER</button>
                     </form>
