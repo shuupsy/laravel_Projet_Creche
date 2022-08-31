@@ -220,3 +220,138 @@
         </div>
     </div>
 </div>
+
+{{-- Modal CHANGE (EN COURS) --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div class='text-center'>
+
+                    <h3 id="modal-title">Horaire d'Arrivée / de Sortie</h3>
+
+                    <h2 id='clock'
+                    class='mx-auto my-3 border-double border-4 w-20 font-black border-stone-800 rounded-md'>
+                </h2>
+
+                <form action="{{$id_kid->id}}/updatehoursmatin" method="POST">
+                    @csrf
+                    @method("PUT")
+                    <button value="{{date('TH:i:s')}}" name="arrivalTime" type="submit" class='text-sm border bg-[#D8E2DC] p-2 rounded-md'>ARRIVÉE (matin)</button>
+                </form>
+                <form action="{{$id_kid->id}}/updatehourssoir" method="POST">
+                    @csrf
+                    @method("PUT")
+                    <button type="submit" value="{{date('TH:i:s')}}" name="departTime" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>SORTIE (soir)</button></form>
+
+                        <p class='text-xs'><span class='underline'>Guide:</span> Appuyez sur un des 2 boutons pour
+                            enregistrer automatiquement l'heure d'arrivée/sortie.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{-- Modal DIARRHEE (PAS FAIT) --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div class='text-center'>
+
+                    <h3 id="modal-title">Horaire d'Arrivée / de Sortie</h3>
+
+                    <h2 id='clock'
+                    class='mx-auto my-3 border-double border-4 w-20 font-black border-stone-800 rounded-md'>
+                </h2>
+
+                <form action="{{$id_kid->id}}/updatehoursmatin" method="POST">
+                    @csrf
+                    @method("PUT")
+                    <button value="{{date('TH:i:s')}}" name="arrivalTime" type="submit" class='text-sm border bg-[#D8E2DC] p-2 rounded-md'>ARRIVÉE (matin)</button>
+                </form>
+                <form action="{{$id_kid->id}}/updatehourssoir" method="POST">
+                    @csrf
+                    @method("PUT")
+                    <button type="submit" value="{{date('TH:i:s')}}" name="departTime" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>SORTIE (soir)</button></form>
+
+                        <p class='text-xs'><span class='underline'>Guide:</span> Appuyez sur un des 2 boutons pour
+                            enregistrer automatiquement l'heure d'arrivée/sortie.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{-- Modal FIEVRE (PAS FAIT) --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div class='text-center'>
+
+                    <h3 id="modal-title">Horaire d'Arrivée / de Sortie</h3>
+
+                    <h2 id='clock'
+                    class='mx-auto my-3 border-double border-4 w-20 font-black border-stone-800 rounded-md'>
+                </h2>
+
+                <form action="{{$id_kid->id}}/updatehoursmatin" method="POST">
+                    @csrf
+                    @method("PUT")
+                    <button value="{{date('TH:i:s')}}" name="arrivalTime" type="submit" class='text-sm border bg-[#D8E2DC] p-2 rounded-md'>ARRIVÉE (matin)</button>
+                </form>
+                <form action="{{$id_kid->id}}/updatehourssoir" method="POST">
+                    @csrf
+                    @method("PUT")
+                    <button type="submit" value="{{date('TH:i:s')}}" name="departTime" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>SORTIE (soir)</button></form>
+
+                        <p class='text-xs'><span class='underline'>Guide:</span> Appuyez sur un des 2 boutons pour
+                            enregistrer automatiquement l'heure d'arrivée/sortie.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{-- Modal BLESSURE --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div>
+
+                    <h3 class='text-center' id="modal-title">BLESSURE / ACCIDENT</h3>
+
+                    <form action="{{$id_kid->id}}/updateaccident" method="POST">
+                        @csrf
+                        @method("PUT")
+                        <label for="accident">Description</label>
+                        <textarea name="accident" id="accident" cols="30" rows="5" class='placeholder:text-slate-400 bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-[#8EC9C1] focus:ring-[#8EC9C1] focus:ring-1 sm:text-sm'></textarea>
+                        <button type='submit' class='text-sm border p-2 rounded-md bg-[#57cc99]'>VALIDER</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
