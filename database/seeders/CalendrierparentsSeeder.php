@@ -16,6 +16,7 @@ class CalendrierparentsSeeder extends Seeder
     public function run()
     {
         DB::table("calendrierparents")->insert([
+            // id 1
             [
                 "day" => "Lundi",
                 "profilenfantparent_id" => 1,
@@ -46,17 +47,36 @@ class CalendrierparentsSeeder extends Seeder
                 "activity" => "musique",
                 "dateDay" => 9
             ],
+            //id 2
             [
-                "day" => "Samedi",
-                "profilenfantparent_id" => 1,
-                "activity" => "gym",
-                "dateDay" => 10
+                "day" => "Lundi",
+                "profilenfantparent_id" => 2,
+                "activity" => "peinture",
+                "dateDay" => 5
             ],
             [
-                "day" => "Dimanche",
-                "profilenfantparent_id" => 1,
-                "activity" => "cuisiner",
-                "dateDay" => 11
+                "day" => "Mardi",
+                "profilenfantparent_id" => 2,
+                "activity" => "dessin",
+                "dateDay" => 6
+            ],
+            [
+                "day" => "Mercredi",
+                "profilenfantparent_id" => 2,
+                "activity" => "aucune",
+                "dateDay" => 7
+            ],
+            [
+                "day" => "Jeudi",
+                "profilenfantparent_id" => 2,
+                "activity" => "lecture",
+                "dateDay" => 8
+            ],
+            [
+                "day" => "Vendredi",
+                "profilenfantparent_id" => 2,
+                "activity" => "musique",
+                "dateDay" => 9
             ]
         ]);
     }

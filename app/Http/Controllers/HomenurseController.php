@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Homenurse;
+use App\Models\Journalparents;
 use App\Models\Profilenfantparents;
 use App\Http\Requests\StoreHomenurseRequest;
 use App\Http\Requests\UpdateHomenurseRequest;
@@ -71,9 +72,26 @@ class HomenurseController extends Controller
      * @param  \App\Models\Homenurse  $homenurse
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateHomenurseRequest $request, Homenurse $homenurse)
+    public function updatematin(UpdateHomenurseRequest $request,  $id)
     {
-        //
+        $data = Journalparents::find($id);
+        $data->arrivalTime = $request->arrivalTime;
+        $data->save();
+        return redirect()->back();
+    }
+    public function updatesoir(UpdateHomenurseRequest $request,  $id)
+    {
+        $data = Journalparents::find($id);
+        $data->departTime = $request->departTime;
+        $data->save();
+        return redirect()->back();
+    }
+    public function updatehumeur(UpdateHomenurseRequest $request,  $id)
+    {
+        $data = Journalparents::find($id);
+        $data->humeur = $request->humeur;
+        $data->save();
+        return redirect()->back();
     }
 
     /**
