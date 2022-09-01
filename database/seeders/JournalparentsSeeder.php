@@ -27,7 +27,7 @@ class JournalparentsSeeder extends Seeder
                 "sleep" => 3,
                 "poo" => 3,
                 "change" => 2,
-                "temperature" => 38.7,
+                "temperature" => "38.7",
                 "humeur" => "joyeux"
             ],
             [
@@ -40,7 +40,7 @@ class JournalparentsSeeder extends Seeder
                 "departTime" => "17:45",
                 "sleep" => 2.30,
                 "poo" => 1,
-                "temperature" => 36.7,
+                "temperature" => "36.7",
                 "change" => 1,
                 "humeur" => "triste"
             ],
