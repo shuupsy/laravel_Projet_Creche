@@ -27,7 +27,6 @@
 .sidebar.open {
     /* Nav ouverture */
     width: 250px;
-
 }
 
 .sidebar .logo_details {
@@ -173,7 +172,7 @@
     overflow: hidden;
 }
 
-.sidebar.open li.profile {
+.sidebar.open .profile {
     /* width: 250px; */
     width: 100%;
 }
@@ -225,15 +224,17 @@
     position: relative;
     min-height: 100vh;
     top: 0;
-    left: 78px;
-    width: calc(100% - 78px);
+    /* left: 78px; */
+    /* width: calc(100% - 78px); */
     transition: all 0.5s ease;
     z-index: 2;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebar.open~.contenu {
     left: 250px;
-    width: calc(100% - 250px);
+    /* width: calc(100% - 250px); */
 }
 
 /* Fin nav */
@@ -280,7 +281,13 @@
     position: fixed;
 }
 
-.burger-btn {
+#burger {
+    padding: 3px;
+    border: 3px solid #FFD6DD;
+    border-radius: 50%;
+}
+
+.burger-btn  {
     position: fixed;
     top: 1rem;
     right: 1rem;
