@@ -152,25 +152,25 @@
                             {{-- COLERE --}}
                             <div class='meteo'>
                                 <label for="lightning">Pas bien</label>
-                                <input type="radio" name='eat' value="colere" id="lightning">
+                                <input type="radio" name='eat' value="PB" id="lightning">
                             </div>
 
                             {{-- TRISTE --}}
                             <div class='meteo'>
                                 <label for="rain">Moyen</label>
-                                <input type="radio" name='eat' value="triste" id="rain">
+                                <input type="radio" name='eat' value="M" id="rain">
                             </div>
 
                             {{-- AGITE --}}
                             <div class='meteo'>
                                 <label for="wind">Bien</label>
-                                <input type="radio" name='eat' value="agite" id="wind">
+                                <input type="radio" name='eat' value="B" id="wind">
                             </div>
 
                             {{-- STRESS --}}
                             <div class='meteo'>
                                 <label for="cloud">Très bien</label>
-                                <input type="radio" name='eat' value="distrait" id="cloud">
+                                <input type="radio" name='eat' value="TB" id="cloud">
                             </div>
 
 
@@ -237,14 +237,10 @@
                     <h3 id="modal-title">{{ $id_kid -> name }} a été changé.</h3>
 
                 </h2>
-
-                <button class='text-sm border bg-slate-50 p-2 rounded-md'>NON</button>
-
                 <form action="{{$id_kid->id}}/updatechange" method="POST">
                     @csrf
                     @method("PUT")
-
-                    <button type="submit" name="change" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>OUI</button>
+                    <button type="submit" onclick="updatechange('{{ $id_kid->id }}')">OUI</button>
                 </form>
 
 
@@ -270,13 +266,11 @@
 
                 </h2>
 
-                <button class='text-sm border bg-slate-50 p-2 rounded-md'>NON</button>
 
                 <form action="{{$id_kid->id}}/updatepoo" method="POST">
                     @csrf
                     @method("PUT")
-
-                    <button type="submit" name="poo" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>OUI</button>
+                    <button type="submit" onclick="plus('{{ $id_kid->id }}')">OUI</button>
                 </form>
 
 

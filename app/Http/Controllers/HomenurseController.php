@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Homenurse;
 use App\Models\Journalparents;
+use App\Models\Inventaireparents;
 use App\Models\Profilenfantparents;
 use App\Http\Requests\StoreHomenurseRequest;
 use App\Http\Requests\UpdateHomenurseRequest;
@@ -114,6 +115,20 @@ class HomenurseController extends Controller
         $data->save();
         return redirect()->back();
     }
+    public function updateaccident(UpdateHomenurseRequest $request,  $id)
+    {
+        $data = Journalparents::find($id);
+        $data->accident = $request->accident;
+        $data->save();
+        return redirect()->back();
+    }
+    public function updatechange(UpdateHomenurseRequest $request,  $id)
+    {
+        $product = Inventaireparents::where("profilenfantparent_id", "=", $id)->where("name", "=","couche")->get();
+        $product[0]->quantity -= 1;
+        $product[0]->save();
+        return redirect()->back();
+    }
 
     /**
      * Remove the specified resource from storage.
@@ -124,5 +139,12 @@ class HomenurseController extends Controller
     public function destroy(Homenurse $homenurse)
     {
         //
+    }
+    //fonction pour le poo !!!!!!
+    public function plus($id){
+        $product = Journalparents::find($id);
+        $product->poo += 1;
+        $product->save();
+        return redirect()->back();
     }
 }
