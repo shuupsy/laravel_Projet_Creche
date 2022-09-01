@@ -280,7 +280,7 @@
 </div>
 
 
-{{-- Modal FIEVRE (PAS FAIT) --}}
+{{-- Modal FIEVRE --}}
 <div class="relative flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
@@ -297,7 +297,7 @@
 
                         <div class="range-slider mt-5">
                           <span id="rs-bullet">37°C</span>
-                          <input id="rs-range-line" type="range" name="temperature" value="37" min="35" step="0.1" max="41">
+                          <input id="rs-range-line" type="range" name="temperature" value="37" min="35" step="0.1" max="40">
                         </div>
 
                         <div class="box-minmax">
