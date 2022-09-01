@@ -11,6 +11,7 @@
     {{-- CSS --}}
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/media.css">
+    <link rel="stylesheet" href="/assets/css/calendrier.css">
 
     <title>Puéricultrice</title>
 </head>
@@ -27,6 +28,7 @@
     </main>
 
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/calendrierBack.js"></script>
 </body>
 
 </html>
