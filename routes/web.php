@@ -52,13 +52,10 @@ Route::put("/kid/{id}/updaterepas", [HomenurseController::class,"updaterepas"]);
 Route::put("/kid/{id}/updatepoo", [HomenurseController::class,"plus"]);
 Route::put("/kid/{id}/updatechange", [HomenurseController::class,"updatechange"]);
 Route::put("/kid/{id}/updateaccident", [HomenurseController::class,"updateaccident"]);
-<<<<<<< HEAD
-Route::put("/kid/{id}/updatetemperature", [HomenurseController::class,"updatetemperature"]);
-=======
 
+Route::put("/kid/{id}/updatetemperature", [HomenurseController::class,"updatetemperature"]);
 
 
 
 /* Route profil Enfant Parent */
 Route::get('/ProfilEnfant', [ProfilenfantparentsController::class, 'index'])->name('ProfilEnfant');
->>>>>>> main
