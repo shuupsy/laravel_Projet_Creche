@@ -29,5 +29,3 @@ btnJour.forEach(element => {
 
     });
  });
-
-

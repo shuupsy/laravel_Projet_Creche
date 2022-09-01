@@ -129,7 +129,13 @@ class HomenurseController extends Controller
         $product[0]->save();
         return redirect()->back();
     }
-
+    public function updatetemperature(UpdateHomenurseRequest $request,  $id)
+    {
+        $data = Journalparents::find($id);
+        $data->temperature = $request->temperature;
+        $data->save();
+        return redirect()->back();
+    }
     /**
      * Remove the specified resource from storage.
      *

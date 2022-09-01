@@ -280,7 +280,7 @@
 </div>
 
 
-{{-- Modal FIEVRE (PAS FAIT) --}}
+{{-- Modal FIEVRE --}}
 <div class="relative flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
@@ -292,23 +292,22 @@
                 <div class='text-center'>
 
                     <h3 id="modal-title">TEMPERATURE</h3>
+                    <form action="{{$id_kid->id}}/updatetemperature" method="POST">
+                        @csrf
+                        @method("PUT")
 
                     <div class="container_temperature">
+                            <div class="range-slider mt-5">
+                                <span id="rs-bullet">37°C</span>
+                                <input id="rs-range-line" type="range" name="temperature" min="35" step="0.1" max="40">
+                            </div>
 
-                        <div class="range-slider mt-5">
-                          <span id="rs-bullet">37°C</span>
-                          <input id="rs-range-line" type="range" name="temperature" value="37" min="35" step="0.1" max="41">
+                            <div class="box-minmax">
+                                <p>Normale [36.5 - 37.5]</p>
+                            </div>
                         </div>
-
-                        <div class="box-minmax">
-                            <p>Normale [36.5 - 37.5]</p>
-                        </div>
-                      </div>
-                      <button type="submit" name="temperature" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>VALIDER</button>
-                </h2>
-
-
-
+                        <button type="submit" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>VALIDER</button>
+                    </form>
                 </div>
 
             </div>
@@ -317,6 +316,34 @@
 </div>
 
 {{-- Modal BLESSURE --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div>
+
+                    <h3 class='text-center' id="modal-title">BLESSURE / ACCIDENT</h3>
+
+                    <form action="{{$id_kid->id}}/updateaccident" method="POST">
+                        @csrf
+                        @method("PUT")
+                        <label for="accident">Description</label>
+                        <textarea name="accident" id="accident" cols="30" rows="5" class='placeholder:text-slate-400 bg-white w-full border border-slate-300 rounded-md py-2 pl-2 pr-3 shadow-sm focus:outline-none focus:border-[#8EC9C1] focus:ring-[#8EC9C1] focus:ring-1 sm:text-sm'></textarea>
+                        <button type='submit' class='text-sm border p-2 rounded-md bg-[#57cc99]'>VALIDER</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{-- Modal allergie --}}
 <div class="relative flex justify-center">
     <div class='modalFull hidden'>
         <div class="">

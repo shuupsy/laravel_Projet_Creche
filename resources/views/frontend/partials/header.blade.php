@@ -39,7 +39,7 @@
        <span class="tooltip">Inventaire</span>
      </li>
      <li>
-       <a href="#">
+       <a href="{{ Route('administration')}}">
         <i class='bx bx-file'></i>
          <span class="links_name">Administratif</span>
        </a>

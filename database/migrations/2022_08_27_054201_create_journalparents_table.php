@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string("accident");
             $table->string("eat");
             $table->float("sleep");
-            $table->float("temperature");
+            $table->string("temperature");
             $table->integer("change");
             $table->string("activity");
             $table->string("day");
