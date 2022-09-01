@@ -1,8 +1,8 @@
 const btnJour = document.querySelectorAll('#btnJour');
 const container = document.querySelector('.containerCalendrier');
+const divDays = document.querySelector('.days');
 
 const contenu = document.querySelector('.noShow');
-
 
 
 btnJour.forEach(element => {
@@ -20,3 +20,5 @@ btnJour.forEach(element => {
         }
     });
  });
+
+
