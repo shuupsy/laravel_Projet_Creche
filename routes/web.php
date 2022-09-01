@@ -6,6 +6,7 @@ use App\Http\Controllers\InventairenurseController;
 use App\Http\Controllers\CalendrierparentsController;
 use App\Http\Controllers\InventaireparentsController;
 use App\Http\Controllers\ProfilenfantparentsController;
+use App\Http\Controllers\AdministrationparentsController;
 
 
 
@@ -13,6 +14,7 @@ Route::get('/', function () {
     return view('frontend.pages.journal');
 });
 
+Route::get("/1/administrationParents",[AdministrationparentsController::class, "index"])->name("administration");
 
 Route::get('/InventaireNurses', [InventairenurseController::class, 'index'])->name('inventaire-nurses');
 

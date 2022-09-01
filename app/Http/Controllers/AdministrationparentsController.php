@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Profilenfantparents;
+use App\Models\Administrationparents;
 use App\Http\Requests\StoreAdministrationparentsRequest;
 use App\Http\Requests\UpdateAdministrationparentsRequest;
-use App\Models\Administrationparents;
 
 class AdministrationparentsController extends Controller
 {
@@ -15,7 +16,8 @@ class AdministrationparentsController extends Controller
      */
     public function index()
     {
-        //
+        $data = Profilenfantparents::find(1);
+        return view("frontend.pages.administration",compact("data"));
     }
 
     /**
