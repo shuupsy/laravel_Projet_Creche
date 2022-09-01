@@ -32,14 +32,14 @@
          <span class="tooltip">Profil Enfant</span>
      </li>
      <li>
-       <a href="#">
+       <a href="{{route('inventaire')}}">
         <i class='bx bx-shopping-bag'></i>
          <span class="links_name">Inventaire</span>
        </a>
        <span class="tooltip">Inventaire</span>
      </li>
      <li>
-       <a href="#">
+       <a href="{{ Route('administration')}}">
         <i class='bx bx-file'></i>
          <span class="links_name">Administration</span>
        </a>

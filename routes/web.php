@@ -2,10 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomenurseController;
+use App\Http\Controllers\CalendriernurseController;
 use App\Http\Controllers\InventairenurseController;
 use App\Http\Controllers\CalendrierparentsController;
 use App\Http\Controllers\InventaireparentsController;
 use App\Http\Controllers\ProfilenfantparentsController;
+use App\Http\Controllers\AdministrationparentsController;
 
 
 
@@ -13,6 +15,7 @@ Route::get('/', function () {
     return view('frontend.pages.journal');
 });
 
+Route::get("/1/administrationParents",[AdministrationparentsController::class, "index"])->name("administration");
 
 Route::get('/InventaireNurses', [InventairenurseController::class, 'index'])->name('inventaire-nurses');
 
@@ -29,6 +32,10 @@ Route::get('/InventaireParents', [InventaireparentsController::class, 'index'])-
 //route calendrier parents
 
 Route::get('/calendrier', [CalendrierparentsController::class, 'index'])->name('calendrier');
+
+//route calendrier nurse
+
+Route::get('/calendrierNurses', [CalendriernurseController::class, 'index'])->name('calendrier-nurses');
 
 //route HOME
 Route::get('home-nurses', [HomenurseController::class, 'index'])->name('home-nurses');
@@ -53,9 +60,16 @@ Route::put("/kid/{id}/updatepoo", [HomenurseController::class,"plus"]);
 Route::put("/kid/{id}/updatechange", [HomenurseController::class,"updatechange"]);
 Route::put("/kid/{id}/updateaccident", [HomenurseController::class,"updateaccident"]);
 
+
+
+
+
+//Route profil Enfant Parent
+
 Route::put("/kid/{id}/updatetemperature", [HomenurseController::class,"updatetemperature"]);
 
 
 
 /* Route profil Enfant Parent */
+
 Route::get('/ProfilEnfant', [ProfilenfantparentsController::class, 'index'])->name('ProfilEnfant');

@@ -19,47 +19,47 @@ class InventairenurseSeeder extends Seeder
             [
                 "name" => "Produits d'entretien",
                 "quantity" => 3,
-                "img" => "LIEN A MODIFIER"
+                "img" => "cleaning-mop.svg"
             ],
             [
                 "name" => "Couche",
                 "quantity" => 34,
-                "img" => "LIEN A MODIFIER"
+                "img" => "diaper.svg"
             ],
             [
                 "name" => "Savon",
                 "quantity" => 9,
-                "img" => "LIEN A MODIFIER"
+                "img" => "bathing-clean-cleansing-2-svgrepo-com.svg"
             ],
             [
                 "name" => "Désinfectant",
                 "quantity" => 1,
-                "img" => "LIEN A MODIFIER"
+                "img" => "alcohol-svgrepo-com.svg"
             ],
             [
                 "name" => "Savon partie intime",
                 "quantity" => 2,
-                "img" => "LIEN A MODIFIER"
+                "img" => "shampoo-svgrepo-com.svg"
             ],
             [
                 "name" => "Serum physiologique",
                 "quantity" => 6,
-                "img" => "LIEN A MODIFIER"
+                "img" => "serum.svg"
             ],
             [
                 "name" => "Coton tige",
                 "quantity" => 10,
-                "img" => "LIEN A MODIFIER"
+                "img" => "cotton-swab.svg"
             ],
             [
                 "name" => "Crème pour les fesses",
                 "quantity" => 0,
-                "img" => "LIEN A MODIFIER"
+                "img" => "baby-powder-powder-svgrepo-com.svg"
             ],
             [
                 "name" => "Elastiques pour cheveux",
                 "quantity" => 23,
-                "img" => "LIEN A MODIFIER"
+                "img" => "hair-clamp.svg"
             ]
         ]);
     }

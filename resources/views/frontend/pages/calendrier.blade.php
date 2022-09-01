@@ -23,7 +23,7 @@
         </div>
         <div class="days">
             @foreach ($data as $jour)
-                <p id="btnJour" onclick="">{{$jour->dateDay}}</p>
+                <p id="btnJour">{{$jour->dateDay}}</p>
             @endforeach
         </div>
         <div class="noShow">
@@ -33,14 +33,26 @@
                 <p>14h</p>
                 <p>16h</p>
             </div>
+
+            <div class="activitesContainer">
+
+
+            @foreach ($data as $jour )
+
+
             <div class="activites">
-                <p class="titre">
-                    activité
-                </p>
-                <p>
-                    00.00 - 00.00
-                </p>
+                    <p class="titre">
+                        {{$jour->activity}}
+                    </p>
+                    <p>
+                        00.00 - 00.00
+                    </p>
             </div>
+
+
+            @endforeach
+            </div>
+
         </div>
     </div>
 @endsection
