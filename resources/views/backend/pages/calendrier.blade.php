@@ -8,8 +8,7 @@
                 <img class="w-12" src="https://www.svgrepo.com/show/108654/mercury.svg" alt="">
             </div>
             <div class="flex flex-col">
-                <p>{{ $data[2]->day }}</p>
-                <p>{{ $data[2]->dateDay }} septembre</p>
+
             </div>
         </div>
         <div class="week">
@@ -22,9 +21,13 @@
             <p>D</p>
         </div>
         <div class="days">
-            @foreach ($data as $jour)
-                <p id="btnJour">{{$jour->dateDay}}</p>
-            @endforeach
+          <p>5</p>
+          <p>6</p>
+          <p>7</p>
+          <p>8</p>
+          <p>9</p>
+          <p>10</p>
+          <p>11</p>
         </div>
         <div class="noShow">
             <div class="heures">
@@ -37,12 +40,11 @@
             <div class="activitesContainer">
 
 
-            @foreach ($data as $jour )
 
 
             <div class="activites">
                     <p class="titre">
-                        {{$jour->activity}}
+
                     </p>
                     <p>
                         00.00 - 00.00
@@ -50,7 +52,7 @@
             </div>
 
 
-            @endforeach
+
             </div>
 
         </div>

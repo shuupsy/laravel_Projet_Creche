@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomenurseController;
+use App\Http\Controllers\CalendriernurseController;
 use App\Http\Controllers\InventairenurseController;
 use App\Http\Controllers\CalendrierparentsController;
 use App\Http\Controllers\InventaireparentsController;
@@ -29,6 +30,10 @@ Route::get('/InventaireParents', [InventaireparentsController::class, 'index'])-
 //route calendrier parents
 
 Route::get('/calendrier', [CalendrierparentsController::class, 'index'])->name('calendrier');
+
+//route calendrier nurse
+
+Route::get('/calendrierNurses', [CalendriernurseController::class, 'index'])->name('calendrier-nurses');
 
 //route HOME
 Route::get('home-nurses', [HomenurseController::class, 'index'])->name('home-nurses');

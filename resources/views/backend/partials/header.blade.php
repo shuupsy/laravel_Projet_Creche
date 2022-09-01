@@ -16,7 +16,7 @@
          <span class="tooltip">Section</span>
       </li>
       <li>
-       <a href="#">
+       <a href="{{ Route('calendrier-nurses') }}">
         <i class='bx bx-calendar'></i>
          <span class="links_name">Calendrier</span>
        </a>
