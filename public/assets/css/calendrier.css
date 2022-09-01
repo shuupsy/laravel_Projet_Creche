@@ -82,3 +82,9 @@
 .titre{
     font-weight: bold;
 }
+
+
+.activitesContainer {
+    display: flex;
+    flex-direction: column;
+}

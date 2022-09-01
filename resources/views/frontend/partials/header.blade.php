@@ -32,7 +32,7 @@
          <span class="tooltip">Profil Enfant</span>
      </li>
      <li>
-       <a href="#">
+       <a href="{{route('inventaire')}}">
         <i class='bx bx-shopping-bag'></i>
          <span class="links_name">Inventaire</span>
        </a>

@@ -21,62 +21,62 @@ class InventaireparentsSeeder extends Seeder
                 "name" => "Habits de rechange",
                 "profilenfantparent_id" => 1,
                 "quantity" => 5,
-                "img" => "LIEN A MODIFIER"
+                "img" => "pijama-baby-clothes-svgrepo-com.svg"
             ],
             [
                 "name" => "Couche",
                 "profilenfantparent_id" => 1,
                 "quantity" => 12,
-                "img" => "LIEN A MODIFIER"
+                "img" => "diaper.svg"
             ],
             [
                 "name" => "Lait",
                 "profilenfantparent_id" => 1,
                 "quantity" => 3,
-                "img" => "LIEN A MODIFIER"
+                "img" => "feeding-bottle.svg"
             ],
             [
                 "name" => "Tute",
                 "profilenfantparent_id" => 1,
                 "quantity" => 1,
-                "img" => "LIEN A MODIFIER"
+                "img" => "pacifier-svgrepo-com.svg"
             ],
             [
                 "name" => "Doudou",
                 "profilenfantparent_id" => 1,
                 "quantity" => 1,
-                "img" => "LIEN A MODIFIER"
+                "img" => "teddy-bear.svg"
             ],
             //enfant avec id unique 2
             [
                 "name" => "Habits de rechange",
                 "profilenfantparent_id" => 2,
                 "quantity" => 7,
-                "img" => "LIEN A MODIFIER"
+                "img" => "pijama-baby-clothes-svgrepo-com.svg"
             ],
             [
                 "name" => "Couche",
                 "profilenfantparent_id" => 2,
                 "quantity" => 9,
-                "img" => "LIEN A MODIFIER"
+                "img" => "diaper.svg"
             ],
             [
                 "name" => "Lait",
                 "profilenfantparent_id" => 2,
                 "quantity" => 1,
-                "img" => "LIEN A MODIFIER"
+                "img" => "feeding-bottle.svg"
             ],
             [
                 "name" => "Tute",
                 "profilenfantparent_id" => 2,
                 "quantity" => 2,
-                "img" => "LIEN A MODIFIER"
+                "img" => "pacifier-svgrepo-com.svg"
             ],
             [
                 "name" => "Doudou",
                 "profilenfantparent_id" => 2,
                 "quantity" => 1,
-                "img" => "LIEN A MODIFIER"
+                "img" => "teddy-bear.svg"
             ]
         ]);
     }

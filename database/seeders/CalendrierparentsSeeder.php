@@ -47,37 +47,18 @@ class CalendrierparentsSeeder extends Seeder
                 "activity" => "musique",
                 "dateDay" => 9
             ],
-            //id 2
             [
-                "day" => "Lundi",
-                "profilenfantparent_id" => 2,
-                "activity" => "peinture",
-                "dateDay" => 5
-            ],
-            [
-                "day" => "Mardi",
-                "profilenfantparent_id" => 2,
-                "activity" => "dessin",
-                "dateDay" => 6
-            ],
-            [
-                "day" => "Mercredi",
-                "profilenfantparent_id" => 2,
+                "day" => "Samedi",
+                "profilenfantparent_id" => 1,
                 "activity" => "aucune",
-                "dateDay" => 7
+                "dateDay" => 10
             ],
             [
-                "day" => "Jeudi",
-                "profilenfantparent_id" => 2,
-                "activity" => "lecture",
-                "dateDay" => 8
+                "day" => "Dimanche",
+                "profilenfantparent_id" => 1,
+                "activity" => "aucune",
+                "dateDay" => 11
             ],
-            [
-                "day" => "Vendredi",
-                "profilenfantparent_id" => 2,
-                "activity" => "musique",
-                "dateDay" => 9
-            ]
         ]);
     }
 }

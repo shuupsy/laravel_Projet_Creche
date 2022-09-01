@@ -6,7 +6,7 @@
 
         @foreach ($inventaire as $item)
             <div class="w-56 flex flex-col items-center gap-2 bg-white drop-shadow-md rounded-lg p-4">
-                <img class="w-1/4 -mt-8" src="https://www.svgrepo.com/show/296614/diaper.svg" alt="">
+                <img class="w-1/4 -mt-8" src="/assets/img/{{$item->img}}" alt="">
                 <div>quantité restante: {{ $item->quantity }}</div>
                 <div class="flex gap-4">
                 <form action="/InventaireNurses/{{$item->id}}/moins" method="POST">
