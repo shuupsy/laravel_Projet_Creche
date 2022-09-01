@@ -249,8 +249,105 @@
 
                     <h3 id="modal-title">{{ $id_kid->name }} a été changé.</h3>
 
+<<<<<<< HEAD
                     </h2>
                     <form action="{{ $id_kid->id }}/updatechange" method="POST">
+=======
+                </h2>
+                <form action="{{$id_kid->id}}/updatechange" method="POST">
+                    @csrf
+                    @method("PUT")
+                    <button type="submit" onclick="updatechange('{{ $id_kid->id }}')">OUI</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{-- Modal DIARRHEE --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div class='text-center'>
+
+                    <h3 id="modal-title">Diarrhée ?</h3>
+                    <p class='text-xs'><span class='underline'>Rappel:</span> A 3 diarrhées par jour, l'enfant devra retourner à la maison.</p>
+                    <p class='text-xs'>Restant: <span>[...]</span></p>
+
+                </h2>
+
+
+                <form action="{{$id_kid->id}}/updatepoo" method="POST">
+                    @csrf
+                    @method("PUT")
+                    <button type="submit" onclick="plus('{{ $id_kid->id }}')">OUI</button>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{-- Modal FIEVRE --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div class='text-center'>
+
+                    <h3 id="modal-title">TEMPERATURE</h3>
+
+                    <div class="container_temperature">
+
+                        <div class="range-slider mt-5">
+                          <span id="rs-bullet">37°C</span>
+                          <input id="rs-range-line" type="range" name="temperature" value="37" min="35" step="0.1" max="40">
+                        </div>
+
+                        <div class="box-minmax">
+                            <p>Normale [36.5 - 37.5]</p>
+                        </div>
+                      </div>
+                      <button type="submit" name="temperature" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>VALIDER</button>
+                </h2>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{{-- Modal BLESSURE --}}
+<div class="relative flex justify-center">
+    <div class='modalFull hidden'>
+        <div class="">
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+
+            <div
+                class="relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl dark:bg-gray-900 sm:my-8 sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+
+                <div>
+
+                    <h3 class='text-center' id="modal-title">BLESSURE / ACCIDENT</h3>
+
+                    <form action="{{$id_kid->id}}/updateaccident" method="POST">
+>>>>>>> main
                         @csrf
                         @method('PUT')
                         <button type="submit" onclick="updatechange('{{ $id_kid->id }}')">OUI</button>
