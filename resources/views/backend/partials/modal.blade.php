@@ -304,7 +304,7 @@
                             <p>Normale [36.5 - 37.5]</p>
                         </div>
                       </div>
-                      <button type="submit" name="temperature" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>VALIDER</button>
+                      <button type="submit" class='text-sm border bg-[#8EC9C1] p-2 rounded-md'>VALIDER</button>
                 </h2>
 
 

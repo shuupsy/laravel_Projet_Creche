@@ -26,7 +26,8 @@
 
 .sidebar.open {
     /* Nav ouverture */
-    width: 250px;
+    /* width: 250px; */
+    width: 100%;
 }
 
 .sidebar .logo_details {
@@ -173,7 +174,8 @@
 }
 
 .sidebar.open li.profile {
-    width: 250px;
+    /* width: 250px; */
+    width: 100%;
 }
 
 .sidebar li .profile-details {

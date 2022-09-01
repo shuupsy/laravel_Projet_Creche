@@ -34,10 +34,11 @@ hour(), setInterval(hour, 6000)
 let rangeSlider = document.getElementById("rs-range-line");
 let rangeBullet = document.getElementById("rs-bullet");
 
+
+
 rangeSlider.addEventListener("input", showSliderValue, false);
 
 function showSliderValue() {
   rangeBullet.innerHTML = rangeSlider.value + '°C';
-
 }
 
