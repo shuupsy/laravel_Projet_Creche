@@ -39,7 +39,7 @@
 
             @foreach ($data as $jour )
 
-                @if ($jour->day == 'Lundi')
+                @if ($jour->day === 'Lundi')
                 <div class="activites">
                     <p class="titre">
                         {{$jour->activity}}
