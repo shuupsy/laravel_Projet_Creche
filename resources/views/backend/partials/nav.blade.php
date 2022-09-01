@@ -1,4 +1,4 @@
-<header class="sidebar">
+<div class="sidebar">
     <div class="logo_details">
         <a href="{{ Route('home-nurses') }}">
             <i class='bx bxs-baby-carriage'></i>
@@ -6,7 +6,7 @@
         <div class="logo_name"> <a href="{{ Route('home-nurses') }}">DAILY BABY</a></div>
     </div>
     <i class='bx bx-menu text-[#FFD6DD] sm:text-inherit' id="btn" ></i>
-    
+
     <ul class="nav-list">
       <li>
         <a href='{{ Route('home-nurses') }}'>
@@ -49,4 +49,4 @@
          </a>
      </li>
     </ul>
-  </header>
+  </div>

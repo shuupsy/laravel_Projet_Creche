@@ -1,10 +1,17 @@
 /* NAVBAR */
-
 let btn = document.querySelector('#btn')
 let sidebar = document.querySelector('.sidebar')
 
 btn.onclick = function () {
     sidebar.classList.toggle('open')
+}
+
+/* NAVBAR (mobile) */
+let burger = document.querySelector('#burger')
+burger.onclick = function () {
+    sidebar.classList.toggle('open')
+    burger.classList.toggle('bx-x')
+    sidebar.style.left = '0'
 }
 
 /* Apparition de modal */

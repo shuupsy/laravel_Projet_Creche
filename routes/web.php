@@ -53,6 +53,7 @@ Route::put("/kid/{id}/updatepoo", [HomenurseController::class,"plus"]);
 Route::put("/kid/{id}/updatechange", [HomenurseController::class,"updatechange"]);
 Route::put("/kid/{id}/updateaccident", [HomenurseController::class,"updateaccident"]);
 
+Route::put("/kid/{id}/updatetemperature", [HomenurseController::class,"updatetemperature"]);
 
 
 

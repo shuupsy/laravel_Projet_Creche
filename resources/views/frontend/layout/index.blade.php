@@ -19,7 +19,12 @@
 </head>
 
 <body>
-    @include('frontend.partials.header')
+    <header>
+        <nav>
+            @include('frontend.partials.nav')
+        </nav>
+      {{--   @include('frontend.partials.headers') --}}
+    </header>
 
     <main class='contenu'>
         @yield('content')
