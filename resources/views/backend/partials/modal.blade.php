@@ -291,24 +291,24 @@
 
                 <div class='text-center'>
 
-                    <h3 id="modal-title">Horaire d'Arrivée / de Sortie</h3>
+                    <h3 id="modal-title">TEMPERATURE</h3>
 
-                    <h2 id='clock'
-                    class='mx-auto my-3 border-double border-4 w-20 font-black border-stone-800 rounded-md'>
+                    <div class="container_temperature">
+
+                        <div class="range-slider mt-5">
+                          <span id="rs-bullet">37°C</span>
+                          <input id="rs-range-line" type="range" name="temperature" value="37" min="35" step="0.1" max="41">
+                        </div>
+
+                        <div class="box-minmax">
+                            <p>Normale [36.5 - 37.5]</p>
+                        </div>
+                      </div>
+                      <button type="submit" name="temperature" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>VALIDER</button>
                 </h2>
 
-                <form action="{{$id_kid->id}}/updatehoursmatin" method="POST">
-                    @csrf
-                    @method("PUT")
-                    <button value="{{date('TH:i:s')}}" name="arrivalTime" type="submit" class='text-sm border bg-[#D8E2DC] p-2 rounded-md'>ARRIVÉE (matin)</button>
-                </form>
-                <form action="{{$id_kid->id}}/updatehourssoir" method="POST">
-                    @csrf
-                    @method("PUT")
-                    <button type="submit" value="{{date('TH:i:s')}}" name="departTime" class='text-sm border bg-[#8EC9C1] p-2  rounded-md'>SORTIE (soir)</button></form>
 
-                        <p class='text-xs'><span class='underline'>Guide:</span> Appuyez sur un des 2 boutons pour
-                            enregistrer automatiquement l'heure d'arrivée/sortie.</p>
+
                 </div>
 
             </div>
