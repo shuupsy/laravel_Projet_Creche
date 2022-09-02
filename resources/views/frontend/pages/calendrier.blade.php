@@ -116,7 +116,7 @@
                 <div class="activitesContainer my-5">
                     <div class="activites">
                         <p class="titre">
-                          arrivé:  {{ $data->arrivalTime }} heures
+                          arrivée:  {{ $data->arrivalTime }} heures
 
                     </div>
                 </div>
