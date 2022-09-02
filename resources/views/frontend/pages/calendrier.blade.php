@@ -75,10 +75,10 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        {{$data[0]->activity}}
+                        pate a sel
                     </p>
                     <p>
-                       00:00
+                        09:00 - 10:30
                     </p>
                 </div>
             </div>
@@ -95,10 +95,10 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        {{$data[1]->activity}}
+                        musique
                     </p>
                     <p>
-                        00.00 - 00.00
+                        09.00 - 11.00
                     </p>
                 </div>
             </div>
@@ -107,22 +107,71 @@
 
         <div id="mercredi" class="contenuJour">
             <div class="heures">
-                <p>10h</p>
-                <p>12h</p>
-                <p>14h</p>
-                <p>16h</p>
+                <p class="my-10">10h</p>
+                <p class="my-10">12h</p>
+                <p class="my-10">14h</p>
+                <p class="my-10">16h</p>
             </div>
-            <div class="activitesContainer">
-                <div class="activites">
-                    <p class="titre">
-                        {{$data[2]->activity}}
-                    </p>
-                    <p>
-                        00.00 - 00.00
-                    </p>
-                </div>
-            </div>
+            <div>
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          arrivé:  {{ $data->arrivalTime }} heures
 
+                    </div>
+                </div>
+
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          activité:  {{ $data->activity }}
+                        <p>
+                            09.00 - 11.00
+                        </p>
+                    </div>
+                </div>
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          temperature:  {{ $data->temperature }}
+                        <p>
+                            12.30
+                        </p>
+                    </div>
+                </div>
+
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          repas:  {{ $data->eat }}
+                        <p>
+                            12.00 - 13.00
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          heures dormie:  {{ $data->sleep }}
+                        <p>
+                            13.00 - 16.00
+                        </p>
+                    </div>
+                </div>
+
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          temperature:  {{ $data->temperature }}
+                        <p>
+                            13.00 - 16.00
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <div id="jeudi" class="contenuJour">
@@ -135,7 +184,7 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        {{$data[3]->activity}}
+
                     </p>
                     <p>
                         00.00 - 00.00
@@ -155,7 +204,7 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        {{$data[4]->activity}}
+
                     </p>
                     <p>
                         00.00 - 00.00
@@ -178,7 +227,7 @@
                         samedi
                     </p>
                     <p>
-                        {{$data[5]->activity}}
+                        fermé
                     </p>
                 </div>
             </div>
@@ -195,10 +244,10 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        {{$data[6]->activity}}
+                        dimanche
                     </p>
                     <p>
-                        00.00 - 00.00
+                        fermé
                     </p>
                 </div>
             </div>
