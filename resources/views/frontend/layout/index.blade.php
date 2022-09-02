@@ -23,7 +23,7 @@
         <nav>
             @include('frontend.partials.nav')
         </nav>
-      {{--   @include('frontend.partials.headers') --}}
+        @include('frontend.partials.headers')
     </header>
 
     <main class='contenu'>
