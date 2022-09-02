@@ -6,6 +6,7 @@ use App\Http\Controllers\CalendriernurseController;
 use App\Http\Controllers\InventairenurseController;
 use App\Http\Controllers\CalendrierparentsController;
 use App\Http\Controllers\InventaireparentsController;
+use App\Http\Controllers\MessagerieparentsController;
 use App\Http\Controllers\ProfilenfantparentsController;
 use App\Http\Controllers\AdministrationparentsController;
 
@@ -28,6 +29,12 @@ Route::patch('/InventaireNurses/{id}/moins', [InventairenurseController::class, 
 //route inventaire parents
 
 Route::get('/InventaireParents', [InventaireparentsController::class, 'index'])->name('inventaire');
+
+//route messagerie parents
+
+Route::get('/messagerieParents', [MessagerieparentsController::class, 'index'])->name('messagerieParents');
+
+Route::post('/createMessagerie', [MessagerieparentsController::class, 'store']);
 
 //route calendrier parents
 

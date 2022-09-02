@@ -15,21 +15,6 @@ class MessagerieparentsSeeder extends Seeder
      */
     public function run()
     {
-        DB::table("messagerieparents")->insert([
-            [
-                "section" => 2,
-                "name" => "Emilie",
-                "profilenfantparent_id" => 1,
-                "img" => "LIEN A MODIFIER",
-                "message" => "Bonjour j'aurais un petit retard !"
-            ],
-            [
-                "section" => 1,
-                "name" => "Sophie",
-                "profilenfantparent_id" => 2,
-                "img" => "LIEN A MODIFIER",
-                "message" => "Bonjour je n'ai pas encore mangé aujourdhui ;("
-            ]
-            ]);
+
     }
 }

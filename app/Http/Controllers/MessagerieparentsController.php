@@ -15,7 +15,8 @@ class MessagerieparentsController extends Controller
      */
     public function index()
     {
-        //
+        $data = Messagerieparents::all();
+        return view("frontend.pages.messagerie",compact("data"));
     }
 
     /**
@@ -25,7 +26,7 @@ class MessagerieparentsController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -36,7 +37,10 @@ class MessagerieparentsController extends Controller
      */
     public function store(StoreMessagerieparentsRequest $request)
     {
-        //
+        $data = new Messagerieparents;
+        $data->message = $request->message;
+        $data->save();
+        return redirect()->back();
     }
 
     /**
