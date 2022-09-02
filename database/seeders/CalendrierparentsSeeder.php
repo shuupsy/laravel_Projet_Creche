@@ -58,11 +58,7 @@ class CalendrierparentsSeeder extends Seeder
                 "profilenfantparent_id" => 1,
                 "activity" => "aucune",
                 "dateDay" => 11
-<<<<<<< HEAD
-            ],
-=======
             ]
->>>>>>> main
         ]);
     }
 }

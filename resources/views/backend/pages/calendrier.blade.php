@@ -2,13 +2,48 @@
 
 
 @section('content')
-    <div class="containerCalendrier drop-shadow-md bg-white w-80 mt-16">
+    <div class="containerCalendrier drop-shadow-md bg-white w-80">
         <div class="flex gap-4 p-4 place-content-around items-center">
-            <div>
-                <img class="w-12" src="https://www.svgrepo.com/show/108654/mercury.svg" alt="">
+            <div class="planetes actived">
+                <img class="w-12" src="/assets/img/moon.svg" alt="">
             </div>
-            <div class="flex flex-col">
+            <div class="planetes">
+                <img src="/assets/img/mars.svg" alt="" class="w-12">
+            </div>
+            <div class="planetes"><img src="/assets/img/mercury.svg" alt="" class="w-12"></div>
+            <div class="planetes"><img src="/assets/img/jupiter-svgrepo-com.svg" alt="" class="w-12"></div>
+            <div class="planetes"><img src="/assets/img/venus-svgrepo-com.svg" alt="" class="w-12"></div>
+            <div class="planetes"><img src="/assets/img/saturn.svg" alt="" class="w-12"></div>
+            <div class="planetes"><img src="/assets/img/sun.svg" alt="" class="w-12"></div>
 
+
+            <div class="date actived">
+                <p>Lundi</p>
+                <p>5 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Mardi</p>
+                <p>6 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Mercredi</p>
+                <p>7 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Jeudi</p>
+                <p>8 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Vendredi</p>
+                <p>9 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Samedi</p>
+                <p>10 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Dimanche</p>
+                <p>11 Septembre</p>
             </div>
         </div>
         <div class="week">
@@ -40,10 +75,10 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        lundi
+                        pate a sel
                     </p>
                     <p>
-                        00.00 - 00.00
+                        09:00 - 10:30
                     </p>
                 </div>
             </div>
@@ -60,10 +95,10 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        mardi
+                        musique
                     </p>
                     <p>
-                        00.00 - 00.00
+                        09.00 - 11.00
                     </p>
                 </div>
             </div>
@@ -72,22 +107,71 @@
 
         <div id="mercredi" class="contenuJour">
             <div class="heures">
-                <p>10h</p>
-                <p>12h</p>
-                <p>14h</p>
-                <p>16h</p>
+                <p class="my-10">10h</p>
+                <p class="my-10">12h</p>
+                <p class="my-10">14h</p>
+                <p class="my-10">16h</p>
             </div>
-            <div class="activitesContainer">
-                <div class="activites">
-                    <p class="titre">
-                        mercredi
-                    </p>
-                    <p>
-                        00.00 - 00.00
-                    </p>
-                </div>
-            </div>
+            <div>
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          arrivée:  heures
 
+                    </div>
+                </div>
+
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          activité:
+                        <p>
+                            09.00 - 11.00
+                        </p>
+                    </div>
+                </div>
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          temperature:
+                        <p>
+                            12.30
+                        </p>
+                    </div>
+                </div>
+
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          repas:
+                        <p>
+                            12.00 - 13.00
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          heures dormie:
+                        <p>
+                            13.00 - 16.00
+                        </p>
+                    </div>
+                </div>
+
+                <div class="activitesContainer my-5">
+                    <div class="activites">
+                        <p class="titre">
+                          temperature:
+                        <p>
+                            13.00 - 16.00
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
         <div id="jeudi" class="contenuJour">
@@ -100,7 +184,7 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        jeudi
+
                     </p>
                     <p>
                         00.00 - 00.00
@@ -120,7 +204,7 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        vendredi
+
                     </p>
                     <p>
                         00.00 - 00.00
@@ -143,7 +227,7 @@
                         samedi
                     </p>
                     <p>
-                        00.00 - 00.00
+                        fermé
                     </p>
                 </div>
             </div>
@@ -163,7 +247,7 @@
                         dimanche
                     </p>
                     <p>
-                        00.00 - 00.00
+                        fermé
                     </p>
                 </div>
             </div>
