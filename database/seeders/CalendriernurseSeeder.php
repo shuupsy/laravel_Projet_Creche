@@ -18,31 +18,55 @@ class CalendriernurseSeeder extends Seeder
         DB::table("calendriernurses")->insert([
             [
                 "day" => "Lundi",
-                "dateDay" => 5
+                "dateDay" => 5,
+                "nomEnfant" => "Sarah",
+                "rdvEnfant" => "médecin",
+                "rdvHours" => "10h",
+                "rdvType" => "trimestriel pour vaccin"
             ],
             [
                 "day" => "Mardi",
-                "dateDay" => 6
+                "dateDay" => 6,
+                "nomEnfant" => "Sarah",
+                "rdvEnfant" => "médecin",
+                "rdvHours" => "9:30h",
+                "rdvType" => "malade vomis"
             ],
             [
                 "day" => "Mercredi",
-                "dateDay" => 7
+                "dateDay" => 7,
+                "nomEnfant" => "martin",
+                "rdvEnfant" => "médecin",
+                "rdvHours" => "10h",
+                "rdvType" => "trimestriel pour vaccin"
+
+            ],
+            [
+                "day" => "Mercredi",
+                "dateDay" => 7,
+                "nomEnfant" => "martine",
+                "rdvEnfant" => "médecin",
+                "rdvHours" => "10h",
+                "rdvType" => "fièvre"
+
             ],
             [
                 "day" => "Jeudi",
-                "dateDay" => 8
+                "dateDay" => 8,
+                "nomEnfant" => "théo",
+                "rdvEnfant" => "médecin",
+                "rdvHours" => "10h",
+                "rdvType" => "température"
+
             ],
             [
                 "day" => "Vendredi",
-                "dateDay" => 9
-            ],
-            [
-                "day" => "Samedi",
-                "dateDay" => 10
-            ],
-            [
-                "day" => "Dimanche",
-                "dateDay" => 11
+                "dateDay" => 9,
+                "nomEnfant" => "Sarah",
+                "rdvEnfant" => "médecin",
+                "rdvHours" => "10h",
+                "rdvType" => "trimestriel pour vaccin"
+
             ]
         ]);
     }

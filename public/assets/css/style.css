@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins-Light.ttf') font-weight-normal,
-        url('../fonts/Poppins-Bold.ttf') font-weight-bold;
+        url('../fonts/Poppins-Bold.ttf') font-weight-bold,
+        url('../fonts/Poppins-Black.ttf') font-weight-black;
 }
 
 * {
@@ -297,7 +298,6 @@
 .contenu {
     margin-top: 1.5rem;
 }
-
 
 /* Modal SOMMEIL Select OPTION */
 #sleep_option {
