@@ -5,7 +5,7 @@
         </a>
         <div class="logo_name"><a href="/">DAILY BABY </a></div>
     </div>
-    <i class='bx bx-menu' id="btn" ></i>
+    <i class='bx bx-menu text-[#FFD6DD] sm:text-inherit' id="btn" ></i>
 
     <ul class="nav-list">
       <li>
