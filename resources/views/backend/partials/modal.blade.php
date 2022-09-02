@@ -190,8 +190,7 @@
     <div class="px-4 pt-1.5 text-center sm:block sm:p-0">
         <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
 
-        <div
-        class="border-2 border-blue-100 h-[75vh] modalWindow relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
+        <div class="border-2 border-blue-100 h-[75vh] modalWindow relative inline-block px-4 pt-5 pb-4 overflow-hidden text-left align-bottom transition-all transform bg-white rounded-lg shadow-xl sm:align-middle sm:max-w-sm sm:w-full sm:p-6">
 
             @include('backend.partials.modal-closebtn')
 
@@ -203,24 +202,25 @@
                     @csrf
                     @method('PUT')
                     <select name="sleep" id='sleep_option' class='focus:outline-none' multiple>
-                        <option value="0" class='rounded-lg text-center border border-blue-500 cursor-pointer'>X
-                        </option>
-                        <option value="0.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
-                            0:30</option>
-                        <option value="1.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
-                            1:00</option>
-                        <option value="1.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
-                            1:30</option>
-                        <option value="2.00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
-                            2:00</option>
-                        <option value="2.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
-                            2:30</option>
-                        <option value="3.00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
-                            3:00</option>
-                        <option value="3.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
-                            3:30</option>
-                        <option value=">4.00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>≥
-                            4:00</option>
+                            <option value="0" class='rounded-lg text-center border border-blue-500 cursor-pointer'>X
+                            </option>
+                            <option value="0.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
+                                0:30</option>
+                            <option value="1.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
+                                1:00</option>
+                            <option value="1.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
+                                1:30</option>
+                            <option value="2.00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
+                                2:00</option>
+                            <option value="2.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
+                                2:30</option>
+                            <option value="3.00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
+                                3:00</option>
+                            <option value="3.30" class='rounded-lg text-center border border-blue-500 cursor-pointer'>
+                                3:30</option>
+                            <option value=">4.00" class='rounded-lg text-center border border-blue-500 cursor-pointer'>≥
+                                4:00</option>
+
                     </select>
                     <button type='submit' class='text-sm border p-2 rounded-md bg-[#57cc99]'>VALIDER</button>
                 </form>
