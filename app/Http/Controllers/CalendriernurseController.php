@@ -15,7 +15,9 @@ class CalendriernurseController extends Controller
      */
     public function index()
     {
-       return view('backend.pages.calendrier');
+
+        $data = Calendriernurse::all();
+       return view('backend.pages.calendrier', compact('data'));
     }
 
     /**

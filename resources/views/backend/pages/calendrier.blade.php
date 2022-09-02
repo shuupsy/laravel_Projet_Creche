@@ -75,10 +75,12 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        pate a sel
+                        {{$data[0]->rdvEnfant}}
                     </p>
-                    <p>
-                        09:00 - 10:30
+                    <p class="flex flex-col">
+                        <p>{{$data[0]->nomEnfant}}</p>
+                        <p>{{$data[0]->rdvHours}}</p>
+                        <p>{{$data[0]->rdvType}}</p>
                     </p>
                 </div>
             </div>
@@ -95,10 +97,12 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        musique
+                        {{$data[1]->rdvEnfant}}
                     </p>
-                    <p>
-                        09.00 - 11.00
+                    <p class="flex flex-col">
+                        <p>{{$data[1]->nomEnfant}}</p>
+                        <p>{{$data[1]->rdvHours}}</p>
+                        <p>{{$data[1]->rdvType}}</p>
                     </p>
                 </div>
             </div>
@@ -116,26 +120,12 @@
                 <div class="activitesContainer my-5">
                     <div class="activites">
                         <p class="titre">
-                          arrivée:  heures
-
-                    </div>
-                </div>
-
-                <div class="activitesContainer my-5">
-                    <div class="activites">
-                        <p class="titre">
-                          activité:
-                        <p>
-                            09.00 - 11.00
+                            {{$data[2]->rdvEnfant}}
                         </p>
-                    </div>
-                </div>
-                <div class="activitesContainer my-5">
-                    <div class="activites">
-                        <p class="titre">
-                          temperature:
-                        <p>
-                            12.30
+                        <p class="flex flex-col">
+                            <p>{{$data[2]->nomEnfant}}</p>
+                            <p>{{$data[2]->rdvHours}}</p>
+                            <p>{{$data[2]->rdvType}}</p>
                         </p>
                     </div>
                 </div>
@@ -143,34 +133,15 @@
                 <div class="activitesContainer my-5">
                     <div class="activites">
                         <p class="titre">
-                          repas:
-                        <p>
-                            12.00 - 13.00
+                            {{$data[3]->rdvEnfant}}
+                        </p>
+                        <p class="flex flex-col">
+                            <p>{{$data[3]->nomEnfant}}</p>
+                            <p>{{$data[3]->rdvHours}}</p>
+                            <p>{{$data[3]->rdvType}}</p>
                         </p>
                     </div>
                 </div>
-
-
-                <div class="activitesContainer my-5">
-                    <div class="activites">
-                        <p class="titre">
-                          heures dormie:
-                        <p>
-                            13.00 - 16.00
-                        </p>
-                    </div>
-                </div>
-
-                <div class="activitesContainer my-5">
-                    <div class="activites">
-                        <p class="titre">
-                          temperature:
-                        <p>
-                            13.00 - 16.00
-                        </p>
-                    </div>
-                </div>
-
             </div>
         </div>
 
@@ -184,10 +155,12 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-
+                        {{$data[4]->rdvEnfant}}
                     </p>
-                    <p>
-                        00.00 - 00.00
+                    <p class="flex flex-col">
+                        <p>{{$data[4]->nomEnfant}}</p>
+                        <p>{{$data[4]->rdvHours}}</p>
+                        <p>{{$data[4]->rdvType}}</p>
                     </p>
                 </div>
             </div>
@@ -204,10 +177,12 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-
+                        {{$data[5]->rdvEnfant}}
                     </p>
-                    <p>
-                        00.00 - 00.00
+                    <p class="flex flex-col">
+                        <p>{{$data[5]->nomEnfant}}</p>
+                        <p>{{$data[5]->rdvHours}}</p>
+                        <p>{{$data[5]->rdvType}}</p>
                     </p>
                 </div>
             </div>
