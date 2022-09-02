@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string("imgFace");
             $table->string("contrat");
             $table->string("nutritional");
-            $table->string("picturePermission");
-            $table->string("exitPermission");
+            $table->boolean("picturePermission");
+            $table->boolean("exitPermission");
             $table->string("allergy");
             $table->string("size");
             $table->string("weight");
