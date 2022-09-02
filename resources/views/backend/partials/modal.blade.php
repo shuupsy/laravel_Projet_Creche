@@ -38,7 +38,7 @@
 </div>
 
 {{-- Modal HUMEUR --}}
-<div class="relative flex justify-center">
+<div class="absolute flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
@@ -109,7 +109,7 @@
 </div>
 
 {{-- Modal ACTIVITE --}}
-<div class="relative flex justify-center">
+<div class="absolute flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
@@ -137,7 +137,7 @@
 </div>
 
 {{-- Modal REPAS --}}
-<div class="relative flex justify-center">
+<div class="absolute flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
@@ -191,7 +191,7 @@
 </div>
 
 {{-- Modal SOMMEIL --}}
-<div class="relative flex justify-center">
+<div class="absolute flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
@@ -237,7 +237,7 @@
 </div>
 
 {{-- Modal CHANGE --}}
-<div class="relative flex justify-center">
+<div class="absolute flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
@@ -261,7 +261,7 @@
 </div>
 
 {{-- Modal DIARRHEE --}}
-<div class="relative flex justify-center">
+<div class="absolute flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
@@ -291,7 +291,7 @@
 
 
 {{-- Modal FIEVRE --}}
-<div class="relative flex justify-center">
+<div class="absolute flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
@@ -327,7 +327,7 @@
 </div>
 
 {{-- Modal BLESSURE --}}
-<div class="relative flex justify-center">
+<div class="absolute flex justify-center">
     <div class='modalFull hidden'>
         <div class="">
             <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
@@ -340,7 +340,6 @@
                     <h3 class='text-center' id="modal-title">BLESSURE / ACCIDENT</h3>
 
                     <form action="{{ $id_kid->id }}/updateaccident" method="POST">
-                        >>>>>>> main
                         @csrf
                         @method('PUT')
                         <button type="submit" onclick="updatechange('{{ $id_kid->id }}')">OUI</button>
