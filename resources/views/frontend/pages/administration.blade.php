@@ -29,9 +29,15 @@
             {{-- Autorisation de sortie --}}
             <div class='flex items-center gap-5'>
                 <div class="flex justify-center items-center h-20 w-20 border-2 border-neutral-300 text-[#D8E2DC] rounded-full">
-                    <i class='bx bxs-file text-5xl'></i>
+                    <i class='bx bxs-door-open text-5xl'></i>
                 </div>
-                <p>Autorisation de sortie</p>
+                <p>Autorisation de sortie :
+                    @if ($data->exitPermission == true)
+                        <i class='bx bxs-check-square text-2xl text-green-500'></i>
+                    @else
+                        <i class='bx bxs-x-square text-2xl text-red-500'></i>
+                    @endif
+                </p>
             </div>
 
             {{-- Autorisation de photos --}}
@@ -39,7 +45,13 @@
                 <div class="flex justify-center items-center h-20 w-20 border-2 border-neutral-300 text-[#D8E2DC] rounded-full">
                     <i class='bx bxs-camera text-5xl'></i>
                 </div>
-                <p>Autorisation de photos</p>
+                <p>Autorisation de photos :
+                    @if ($data->picturePermission == true)
+                        <i class='bx bxs-check-square text-2xl text-green-500'></i>
+                    @else
+                        <i class='bx bxs-x-square text-2xl text-red-500'></i>
+                    @endif
+                </p>
             </div>
 
             {{-- Jours de présence --}}
@@ -48,7 +60,7 @@
                     <i class='bx bx-calendar text-5xl'></i>
                 </div>
                 <div>
-                    <p>Jours de présence ({{ $data->presence }}) :</p>
+                    <p>Jours de présence <span class='font-bold border border-dotted border-black rounded-full py-2 px-3'>{{ $data->presence }}</span></p>
                     <p>{{ $data->dayOfPresence }}</p>
                 </div>
             </div>
