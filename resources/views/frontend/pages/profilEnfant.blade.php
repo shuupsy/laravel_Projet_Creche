@@ -4,17 +4,17 @@
     <div class="contenuProfil">
 
         <div class="infosGen">
-            <p class="prenom">{{ $profil[2]->name }}</p>
-            <p> <img class="bg-[#CDD3DF] w-24 h-24 rounded-full p-4 my-4" src="/assets/img/{{$profil[2]->imgFace}}"
+            <p class="prenom">{{ $profil[0]->name }}</p>
+            <p> <img class="bg-[#CDD3DF] w-24 h-24 rounded-full p-4 my-4" src="/assets/img/{{$profil[0]->imgFace}}"
                     alt=""></p>
             <div class="presences">
                 <p class="donneesPresence">
-                    <span class="jour">{{ $profil[2]->presence }}</span>
+                    <span class="jour">{{ $profil[0]->presence }}</span>
                     <span class="joursPresence">Jours
                         <span class="semaine">par semaine</span>
                     </span>
                 </p>
-                <p class="jsemaines">{{ $profil[2]->dayOfPresence }}</p>
+                <p class="jsemaines">{{ $profil[0]->dayOfPresence }}</p>
             </div>
         </div>
         <div class="timeline">
@@ -25,7 +25,7 @@
                     </div>
                     <div class="texte">
                         <p class="soustitre">gender</p>
-                    <p>{{ $profil[2]->genre }}</p>
+                    <p>{{ $profil[0]->genre }}</p>
                     </div>
                 </div>
             </div>
@@ -36,7 +36,7 @@
                     </div>
                     <div class="texte">
                         <p class="soustitre">height</p>
-                    <p>{{ $profil[2]->size }}</p>
+                    <p>{{ $profil[0]->size }}</p>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="texte">
                         <p class="soustitre">weight</p>
-                    <p>{{ $profil[2]->weight }}</p>
+                    <p>{{ $profil[0]->weight }}</p>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="texte">
                         <p class="soustitre">allergies</p>
-                    <p>{{ $profil[2]->allergy }}</p>
+                    <p>{{ $profil[0]->allergy }}</p>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="texte">
                         <p class="soustitre">Teething</p>
-                    <p>{{ $profil[2]->teething }}</p>
+                    <p>{{ $profil[0]->teething }}</p>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                     </div>
                     <div class="texte">
                         <p class="soustitre">alimentation</p>
-                        <p class="text-center">{{ $profil[2]->nutritional }}</p>
+                        <p class="text-center">{{ $profil[0]->nutritional }}</p>
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="texte">
                         <p class="soustitre">Picture autorisation</p>
-                        <p>{{ $profil[2]->picturePermission }}
+                        <p>{{ $profil[0]->picturePermission }}
                         </p>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                     </div>
                     <div class="texte">
                         <p class="soustitre">exit Permission</p>
-                        <p class="text-sm">{{ $profil[2]->exitPermission }}</p>
+                        <p class="text-sm">{{ $profil[0]->exitPermission }}</p>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                     </div>
                     <div class="texte">
                         <p class="soustitre">Feces observations</p>
-                        <p>{{ $profil[2]->surveillanceSelles }}
+                        <p>{{ $profil[0]->surveillanceSelles }}
                         </p>
                     </div>
                 </div>
