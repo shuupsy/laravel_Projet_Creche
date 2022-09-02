@@ -17,9 +17,10 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav>@include('backend.partials.header')</nav>
-        <div>@include('backend.partials.headers')</div>
+
+    @include('backend.partials.nav')
+    <header>
+        @include('backend.partials.headers')
     </header>
 
 

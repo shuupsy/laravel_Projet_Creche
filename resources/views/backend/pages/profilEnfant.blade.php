@@ -80,7 +80,7 @@
             <button class="buttonModal">
                 <img src="/assets/img/medical.svg" alt="svg allergy medical">
             </button>
-            <p class='text-sm'>Allergies</p>
+            <p class='text-sm'>Santé</p>
         </div>
 
     </div> {{-- FIN ICONES --}}

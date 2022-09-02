@@ -1,11 +1,11 @@
-<header class="sidebar">
+<nav class="sidebar">
     <div class="logo_details">
         <a href="/">
             <i class='bx bxs-baby-carriage'></i>
         </a>
         <div class="logo_name"><a href="/">DAILY BABY </a></div>
     </div>
-    <i class='bx bx-menu' id="btn" ></i>
+    <i class='bx bx-menu text-[#FFD6DD] sm:text-inherit' id="btn" ></i>
 
     <ul class="nav-list">
       <li>
@@ -41,9 +41,9 @@
      <li>
        <a href="{{ Route('administration')}}">
         <i class='bx bx-file'></i>
-         <span class="links_name">Administratif</span>
+         <span class="links_name">Administration</span>
        </a>
-       <span class="tooltip">Administratif</span>
+       <span class="tooltip">Administration</span>
      </li>
      <li>
        <a href="#">
@@ -72,4 +72,4 @@
         </a>
      </li>
     </ul>
-  </header>
+  </nav>

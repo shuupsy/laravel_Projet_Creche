@@ -1,10 +1,16 @@
 /* NAVBAR */
-
 let btn = document.querySelector('#btn')
 let sidebar = document.querySelector('.sidebar')
 
 btn.onclick = function () {
     sidebar.classList.toggle('open')
+}
+
+/* NAVBAR (mobile) */
+let burger = document.querySelector('#burger')
+burger.onclick = function () {
+    sidebar.classList.toggle('open')
+    burger.classList.toggle('bx-x')
 }
 
 /* Apparition de modal */
@@ -34,10 +40,11 @@ hour(), setInterval(hour, 6000)
 let rangeSlider = document.getElementById("rs-range-line");
 let rangeBullet = document.getElementById("rs-bullet");
 
+
+
 rangeSlider.addEventListener("input", showSliderValue, false);
 
 function showSliderValue() {
   rangeBullet.innerHTML = rangeSlider.value + '°C';
-
 }
 
