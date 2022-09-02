@@ -27,6 +27,7 @@
 .sidebar.open {
     /* Nav ouverture */
     width: 250px;
+    height: 100vh;
 }
 
 .sidebar .logo_details {
@@ -221,7 +222,6 @@
 
 .contenu {
     position: relative;
-    min-height: 100vh;
     top: 0;
     /* left: 78px; */
     /* width: calc(100% - 78px); */
