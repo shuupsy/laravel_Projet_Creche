@@ -1,31 +1,29 @@
-const btnJour = document.querySelectorAll('#btnJour');
-const container = document.querySelector('.containerCalendrier');
-const divDays = document.querySelector('.days');
-
-const semaine = ['lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi', 'dimanche']
-
-const activityContainer = document.querySelector('.activitesContainer');
-
-const titre = document.createElement('p');
-
-const contenu = document.querySelector('.noShow');
+const liens = document.querySelectorAll('.liens')
+const contenuJour = document.querySelectorAll('.contenuJour');
+const planetes = document.querySelectorAll('.planetes');
+const date = document.querySelectorAll('.date');
 
 
-btnJour.forEach(element => {
-    element.addEventListener("click", ()=>{
-        btnJour.forEach(btn=>{
-            btn.removeAttribute('class', 'activeDay');
-
+liens.forEach((lien, index) => {
+    lien.addEventListener('click', () => {
+        contenuJour.forEach(content => {
+            content.classList.remove('actived');
+        });
+        liens.forEach(lien => {
+            lien.classList.remove('activeDay');
+        });
+        planetes.forEach(planete => {
+            planete.classList.remove('actived');
+        });
+        date.forEach(jour => {
+            jour.classList.remove('actived');
         });
 
-        element.setAttribute('class', 'activeDay');
 
-        // if(contenu.classList.contains('contenuCalendrier')){
-        //     contenu.removeAttribute('class', 'contenuCalendrier');
-        //     contenu.setAttribute('class', 'noShow');
-        // }else{
-        //     contenu.setAttribute('class', 'contenuCalendrier');
-        // }
+        contenuJour[index].classList.add('actived');
+        liens[index].classList.add('activeDay');
+        planetes[index].classList.add('actived');
+        date[index].classList.add('actived');
+    })
 
-    });
- });
+})

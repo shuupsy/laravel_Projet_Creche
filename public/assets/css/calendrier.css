@@ -44,26 +44,6 @@
     background-color: #8EC9C1;
 }
 
-.noShow{
-    opacity: 0;
-    height: 1rem;
-    transition: opacity 200ms;
-}
-
-.contenuCalendrier{
-    opacity: 1;
-    height: auto;
-    background-color: #D8E2DC;
-    width: 100%;
-    padding: 2rem 1rem;
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem;
-    border-bottom-right-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    display: flex;
-    gap: 2.5rem;
-    transition: opacity 1000ms;
-}
 
 .heures{
     display: flex;
@@ -73,7 +53,7 @@
 
 .activites {
     background-color: #fff;
-    width: 75%;
+    width: 100%;
     height: 7rem;
     border-radius: 1.5rem;
     padding: 1.5rem;
@@ -87,4 +67,43 @@
 .activitesContainer {
     display: flex;
     flex-direction: column;
+}
+
+.contenuJour {
+    display: none;
+
+}
+
+.contenuJour.actived{
+    display: flex;
+    gap: 2.5rem;
+    height: auto;
+    background-color: #D8E2DC;
+    width: 100%;
+    padding: 2rem 1rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    display: flex;
+    gap: 2.5rem;
+
+}
+
+
+.date{
+  display: none ;
+}
+
+.date.actived{
+    display: flex;
+    flex-direction: column;
+}
+
+.planetes{
+    display: none;
+}
+
+.planetes.actived{
+    display: block;
 }

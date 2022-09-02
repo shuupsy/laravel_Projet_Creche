@@ -4,12 +4,46 @@
 @section('content')
     <div class="containerCalendrier drop-shadow-md bg-white w-80 mt-16">
         <div class="flex gap-4 p-4 place-content-around items-center">
-            <div>
-                <img class="w-12" src="https://www.svgrepo.com/show/108654/mercury.svg" alt="">
+            <div class="planetes actived">
+                <img class="w-12" src="/assets/img/moon.svg" alt="">
             </div>
-            <div class="flex flex-col">
-                <p>{{ $data[2]->day }}</p>
-                <p>{{ $data[2]->dateDay }} septembre</p>
+            <div class="planetes">
+                <img src="/assets/img/mars.svg" alt="" class="w-12">
+            </div>
+            <div class="planetes"><img src="/assets/img/mercury.svg" alt="" class="w-12"></div>
+            <div class="planetes"><img src="/assets/img/jupiter-svgrepo-com.svg" alt="" class="w-12"></div>
+            <div class="planetes"><img src="/assets/img/venus-svgrepo-com.svg" alt="" class="w-12"></div>
+            <div class="planetes"><img src="/assets/img/saturn.svg" alt="" class="w-12"></div>
+            <div class="planetes"><img src="/assets/img/sun.svg" alt="" class="w-12"></div>
+
+
+            <div class="date actived">
+                <p>Lundi</p>
+                <p>5 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Mardi</p>
+                <p>6 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Mercredi</p>
+                <p>7 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Jeudi</p>
+                <p>8 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Vendredi</p>
+                <p>9 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Samedi</p>
+                <p>10 Septembre</p>
+            </div>
+            <div class="date">
+                <p>Dimanche</p>
+                <p>11 Septembre</p>
             </div>
         </div>
         <div class="week">
@@ -22,35 +56,151 @@
             <p>D</p>
         </div>
         <div class="days">
-            @foreach ($data as $jour)
-                <p id="btnJour">{{$jour->dateDay}}</p>
-            @endforeach
+            <p class="liens">5</p>
+            <p class="liens">6</p>
+            <p class="liens">7</p>
+            <p class="liens">8</p>
+            <p class="liens">9</p>
+            <p class="liens">10</p>
+            <p class="liens">11</p>
         </div>
-        <div class="noShow">
+
+        <div id="lundi" class="contenuJour actived">
             <div class="heures">
                 <p>10h</p>
                 <p>12h</p>
                 <p>14h</p>
                 <p>16h</p>
             </div>
-
             <div class="activitesContainer">
-
-
-            @foreach ($data as $jour )
-
-
-            <div class="activites">
+                <div class="activites">
                     <p class="titre">
-                        {{$jour->activity}}
+                        {{$data[0]->activity}}
+                    </p>
+                    <p>
+                       00:00
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="mardi" class="contenuJour">
+            <div class="heures">
+                <p>10h</p>
+                <p>12h</p>
+                <p>14h</p>
+                <p>16h</p>
+            </div>
+            <div class="activitesContainer">
+                <div class="activites">
+                    <p class="titre">
+                        {{$data[1]->activity}}
                     </p>
                     <p>
                         00.00 - 00.00
                     </p>
+                </div>
             </div>
 
+        </div>
 
-            @endforeach
+        <div id="mercredi" class="contenuJour">
+            <div class="heures">
+                <p>10h</p>
+                <p>12h</p>
+                <p>14h</p>
+                <p>16h</p>
+            </div>
+            <div class="activitesContainer">
+                <div class="activites">
+                    <p class="titre">
+                        {{$data[2]->activity}}
+                    </p>
+                    <p>
+                        00.00 - 00.00
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="jeudi" class="contenuJour">
+            <div class="heures">
+                <p>10h</p>
+                <p>12h</p>
+                <p>14h</p>
+                <p>16h</p>
+            </div>
+            <div class="activitesContainer">
+                <div class="activites">
+                    <p class="titre">
+                        {{$data[3]->activity}}
+                    </p>
+                    <p>
+                        00.00 - 00.00
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="vendredi" class="contenuJour">
+            <div class="heures">
+                <p>10h</p>
+                <p>12h</p>
+                <p>14h</p>
+                <p>16h</p>
+            </div>
+            <div class="activitesContainer">
+                <div class="activites">
+                    <p class="titre">
+                        {{$data[4]->activity}}
+                    </p>
+                    <p>
+                        00.00 - 00.00
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="samedi" class="contenuJour">
+            <div class="heures">
+                <p>10h</p>
+                <p>12h</p>
+                <p>14h</p>
+                <p>16h</p>
+            </div>
+            <div class="activitesContainer">
+                <div class="activites">
+                    <p class="titre">
+                        samedi
+                    </p>
+                    <p>
+                        {{$data[5]->activity}}
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="dimanche" class="contenuJour">
+            <div class="heures">
+                <p>10h</p>
+                <p>12h</p>
+                <p>14h</p>
+                <p>16h</p>
+            </div>
+            <div class="activitesContainer">
+                <div class="activites">
+                    <p class="titre">
+                        {{$data[6]->activity}}
+                    </p>
+                    <p>
+                        00.00 - 00.00
+                    </p>
+                </div>
             </div>
 
         </div>
