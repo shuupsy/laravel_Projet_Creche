@@ -1,5 +1,7 @@
 @extends('frontend.layout.index')
 @section('content')
+<div class="flex flex-col ml-10">
+
     <div class="flex justify-start">
         <h1>ADMINISTRATION</h1>
     </div>
@@ -18,7 +20,7 @@
                 </div>
             </a>
         </div>
-        <div class="ml-10">
+        <div class="ml-5">
             <p>
                 section:{{ $data->section }}
             </p>
@@ -33,7 +35,7 @@
                 </div>
             </a>
         </div>
-        <div class="ml-10">
+        <div class="ml-5">
             <p>
                 contrat:{{ $data->contrat }}
             </p>
@@ -48,7 +50,7 @@
                 </div>
             </a>
         </div>
-        <div class="ml-10">
+        <div class="ml-5">
             <p>
                 permission photo:{{ $data->picturePermission }}
             </p>
@@ -63,7 +65,7 @@
                 </div>
             </a>
         </div>
-        <div class="ml-10">
+        <div class="ml-5">
             <p>
                 permission sortie:{{ $data->exitPermission }}
             </p>
@@ -78,7 +80,7 @@
                 </div>
             </a>
         </div>
-        <div class="ml-10">
+        <div class="ml-5">
             <p>
                 nbr jours présence:{{ $data->presence }}
             </p>
@@ -93,12 +95,13 @@
                 </div>
             </a>
         </div>
-        <div class="ml-10">
+        <div class="ml-5">
             <p>
                 jour de présence:{{ $data->dayOfPresence }}
             </p>
-                </div>
+        </div>
     </div>
 
 
+</div>
 @endsection
