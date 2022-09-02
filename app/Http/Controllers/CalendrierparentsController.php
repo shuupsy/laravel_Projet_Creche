@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Journalparents;
+use App\Models\Calendrierparents;
 use App\Http\Requests\StoreCalendrierparentsRequest;
 use App\Http\Requests\UpdateCalendrierparentsRequest;
-use App\Models\Calendrierparents;
 
 class CalendrierparentsController extends Controller
 {
@@ -15,7 +16,7 @@ class CalendrierparentsController extends Controller
      */
     public function index()
     {
-        $data = Calendrierparents::all();
+        $data = Journalparents::find(1);
         return view('frontend.pages.calendrier', compact('data'));
     }
 
