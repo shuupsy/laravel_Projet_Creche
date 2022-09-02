@@ -27,6 +27,7 @@
 .sidebar.open {
     /* Nav ouverture */
     width: 250px;
+    height: 100vh;
 }
 
 .sidebar .logo_details {
