@@ -46,7 +46,7 @@
        <span class="tooltip">Administration</span>
      </li>
      <li>
-       <a href="#">
+       <a href="{{route("messagerieParents")}}">
         <i class='bx bx-chat'></i>
          <span class="links_name">Messagerie</span>
        </a>

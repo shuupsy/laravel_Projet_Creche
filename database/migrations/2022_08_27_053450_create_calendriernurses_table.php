@@ -17,6 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string("day");
             $table->integer("dateDay");
+            $table->string('rdvType');
+            $table->string('rdvHours');
+            $table->string('nomEnfant');
+            $table->string('rdvEnfant');
             $table->timestamps();
         });
     }

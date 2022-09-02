@@ -370,6 +370,12 @@
     cursor: pointer;
     -webkit-appearance: none;
 }
-
-
-/*ADMINISTRATION :D*/
+/*messagerie :D*/
+.messagerieContent{
+    width: 95%;
+    height: 550px;
+}
+.messagerieEnvoi{
+    width: 95%;
+    height: 80px;
+}
