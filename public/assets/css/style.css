@@ -173,8 +173,7 @@
 }
 
 .sidebar.open .profile {
-    /* width: 250px; */
-    width: 100%;
+    width: 250px;
 }
 
 .sidebar li .profile-details {

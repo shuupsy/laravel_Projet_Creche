@@ -16,6 +16,7 @@
         left: -100%;
     }
     .sidebar.open li.profile{
+        width:100%;
         left: 0;
     }
     .sidebar.open { /* Nav ouverture */
