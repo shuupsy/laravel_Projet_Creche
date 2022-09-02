@@ -5,7 +5,7 @@
 
         <div class="infosGen">
             <p class="prenom">{{ $profil[2]->name }}</p>
-            <p> <img class="bg-[#CDD3DF] w-24 h-24 rounded-full p-4 my-4" src="https://www.svgrepo.com/show/296592/baby.svg"
+            <p> <img class="bg-[#CDD3DF] w-24 h-24 rounded-full p-4 my-4" src="/assets/img/{{$profil[2]->imgFace}}"
                     alt=""></p>
             <div class="presences">
                 <p class="donneesPresence">

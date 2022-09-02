@@ -56,7 +56,7 @@ class ProfilenfantparentsSeeder extends Seeder
                 "section" => "moyen",
                 "name" => "Sarah",
                 "genre" => "feminin",
-                "imgFace" => "LIEN A MODIFIER",
+                "imgFace" => "baby-girl.svg",
                 "contrat" => "LIEN A MODIFIER",
                 "nutritional" => "mange avec les mains, solide, préfère tomates, vege",
                 "picturePermission" => "yes",
