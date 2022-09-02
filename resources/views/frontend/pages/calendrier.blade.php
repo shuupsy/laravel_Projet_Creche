@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div class="containerCalendrier drop-shadow-md bg-white w-80 mt-16">
+    <div class="containerCalendrier drop-shadow-md bg-white w-80">
         <div class="flex gap-4 p-4 place-content-around items-center">
             <div class="planetes actived">
                 <img class="w-12" src="/assets/img/moon.svg" alt="">
@@ -175,10 +175,10 @@
             <div class="activitesContainer">
                 <div class="activites">
                     <p class="titre">
-                        samedi
+                        {{$data[5]->activity}}
                     </p>
                     <p>
-                        {{$data[5]->activity}}
+                       00:00
                     </p>
                 </div>
             </div>

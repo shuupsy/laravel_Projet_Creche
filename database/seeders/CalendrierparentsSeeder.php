@@ -47,22 +47,6 @@ class CalendrierparentsSeeder extends Seeder
                 "activity" => "musique",
                 "dateDay" => 9
             ],
-<<<<<<< HEAD
-=======
-            [
-                "day" => "samedi",
-                "profilenfantparent_id" => 1,
-                "activity" => "musique",
-                "dateDay" => 10
-            ],
-            [
-                "day" => "dimanche",
-                "profilenfantparent_id" => 1,
-                "activity" => "musique",
-                "dateDay" => 11
-            ],
-            //id 2
->>>>>>> main
             [
                 "day" => "Samedi",
                 "profilenfantparent_id" => 1,
@@ -75,27 +59,6 @@ class CalendrierparentsSeeder extends Seeder
                 "activity" => "aucune",
                 "dateDay" => 11
             ],
-<<<<<<< HEAD
-=======
-            [
-                "day" => "Vendredi",
-                "profilenfantparent_id" => 2,
-                "activity" => "musique",
-                "dateDay" => 9
-            ],
-            [
-                "day" => "samedi",
-                "profilenfantparent_id" => 2,
-                "activity" => "musique",
-                "dateDay" => 10
-            ],
-            [
-                "day" => "dimanche",
-                "profilenfantparent_id" => 2,
-                "activity" => "musique",
-                "dateDay" => 11
-            ]
->>>>>>> main
         ]);
     }
 }
