@@ -2,7 +2,7 @@
 
 
 @section('content')
-    <div class="containerCalendrier drop-shadow-md bg-white w-80 mt-16">
+    <div class="containerCalendrier drop-shadow-md bg-white w-80">
         <div class="flex gap-4 p-4 place-content-around items-center">
             <div class="planetes actived">
                 <img class="w-12" src="/assets/img/moon.svg" alt="">
@@ -116,7 +116,7 @@
                 <div class="activitesContainer my-5">
                     <div class="activites">
                         <p class="titre">
-                          arrivé:  {{ $data->arrivalTime }} heures
+                          arrivée:  {{ $data->arrivalTime }} heures
 
                     </div>
                 </div>

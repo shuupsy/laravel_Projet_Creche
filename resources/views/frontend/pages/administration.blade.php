@@ -16,7 +16,7 @@
         <div>
             <a href="">
                 <div class="flex justify-center items-center h-28 w-28 bg-red-500 rounded-full my-5">
-                    <div class="h-14 w-20 bg-blue-500"></div>
+                    <i class='bx bxs-file text-5xl'></i>
                 </div>
             </a>
         </div>
@@ -31,7 +31,7 @@
         <div>
             <a href="">
                 <div class="flex justify-center items-center h-28 w-28 bg-red-500 rounded-full my-5">
-                    <div class="h-14 w-20 bg-blue-500"></div>
+                    <i class='bx bxs-file text-5xl'></i>
                 </div>
             </a>
         </div>
@@ -46,7 +46,7 @@
         <div>
             <a href="">
                 <div class="flex justify-center items-center h-28 w-28 bg-red-500 rounded-full my-5">
-                    <div class="h-14 w-20 bg-blue-500"></div>
+                    <i class='bx bxs-file text-5xl'></i>
                 </div>
             </a>
         </div>
@@ -61,7 +61,7 @@
         <div>
             <a href="">
                 <div class="flex justify-center items-center h-28 w-28 bg-red-500 rounded-full my-5">
-                    <div class="h-14 w-20 bg-blue-500"></div>
+                    <i class='bx bxs-file text-5xl'></i>
                 </div>
             </a>
         </div>
@@ -76,7 +76,7 @@
         <div>
             <a href="">
                 <div class="flex justify-center items-center h-28 w-28 bg-red-500 rounded-full my-5">
-                    <div class="h-14 w-20 bg-blue-500"></div>
+                    <i class='bx bxs-file text-5xl'></i>
                 </div>
             </a>
         </div>
@@ -91,7 +91,7 @@
         <div>
             <a href="">
                 <div class="flex justify-center items-center h-28 w-28 bg-red-500 rounded-full my-5">
-                    <div class="h-14 w-20 bg-blue-500"></div>
+                    <i class='bx bxs-file text-5xl'></i>
                 </div>
             </a>
         </div>
